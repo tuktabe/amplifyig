@@ -5,10 +5,14 @@ import { withAuthenticator } from '@aws-amplify/ui-react';
 
 function App({ signOut, user }) {
   return (
-  //<div className="App">
-    //<PostCollection />
-  //</div>
+  <div className="App">
+  <PostCollection />
+  </div>
+  );
+}
 
+function App({ signOut, user }) {
+  return (
   <div className="App">
     {user.attributes.email}
     <button onClick={signOut}>Sign out</button>
