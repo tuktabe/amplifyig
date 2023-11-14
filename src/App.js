@@ -1,24 +1,18 @@
-//import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
 import { PostCollection } from "./ui-components";
-import { withAuthenticator } from '@aws-amplify/ui-react';
+import { withAuthenticator, Button } from '@aws-amplify/ui-react';
 import { Auth } from 'aws-amplify';
+import React, { useState, useEffect } from "react";
 
-function App() {
+function App({ signOut }) {
   return (
   <div className="App">
     <PostCollection />
-  </div>
+    <Button onClick={signOut}>Sign Out</Button>
+  </div> 
   );
 }
 
-async function signOut() {
-  try {
-    await Auth.signOut();
-  } catch (error) {
-    console.log('error signing out: ', error);
-  }
-}
-      
 
 export default withAuthenticator(App)
