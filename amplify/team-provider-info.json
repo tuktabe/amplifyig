@@ -10,6 +10,11 @@
       "StackName": "amplify-mycapstone-staging-183921",
       "StackId": "arn:aws:cloudformation:us-east-2:651187148162:stack/amplify-mycapstone-staging-183921/22154f90-7e66-11ee-bf38-0202204b3553",
       "AmplifyAppId": "d1teae33piox0a"
+    },
+    "categories": {
+      "auth": {
+        "mycapstone": {}
+      }
     }
   }
 }
