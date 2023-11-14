@@ -1,0 +1,6 @@
+type Post @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  tiltle: String!
+  content: String
+  image: String
+} 
