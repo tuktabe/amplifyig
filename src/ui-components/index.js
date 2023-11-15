@@ -5,8 +5,9 @@
  **************************************************************************/
 
 export { default as Feedpage } from "./Feedpage";
-export { default as FeedpageCollection } from "./FeedpageCollection";
 export { default as LoginScreen } from "./LoginScreen";
+export { default as Newfeed } from "./Newfeed";
+export { default as NewfeedCollection } from "./NewfeedCollection";
 export { default as PhotoPage } from "./PhotoPage";
 export { default as PostCollection } from "./PostCollection";
 export { default as PostCreateForm } from "./PostCreateForm";

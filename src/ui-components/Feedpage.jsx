@@ -9,7 +9,7 @@ import * as React from "react";
 import { getOverrideProps } from "./utils";
 import { Icon, Image, Text, View } from "@aws-amplify/ui-react";
 export default function Feedpage(props) {
-  const { post, overrides, ...rest } = props;
+  const { post, label, overrides, ...rest } = props;
   return (
     <View
       width="375px"
@@ -93,7 +93,7 @@ export default function Feedpage(props) {
           bottom="0%"
           left="0%"
           right="0%"
-          src={`${post?.image}${post?.image}`}
+          src={post?.image}
           {...getOverrideProps(overrides, "Oval5826")}
         ></Icon>
         <View
@@ -127,6 +127,7 @@ export default function Feedpage(props) {
             position="absolute"
             top="0px"
             left="0px"
+            src={post?.image}
             {...getOverrideProps(overrides, "Ellipse 2835828")}
           ></Icon>
         </View>
@@ -752,6 +753,7 @@ export default function Feedpage(props) {
             position="absolute"
             top="5px"
             left="0px"
+            src={post?.image}
             {...getOverrideProps(overrides, "Ellipse 28358238")}
           ></Icon>
           <View
