@@ -8,7 +8,7 @@ import React, { useState, useEffect } from "react";
 function App({ signOut }) {
   return (
   <div className="App">
-    <PostCollection />
+    <UploadpageCollection />
     <Button onClick={signOut}>Sign Out</Button>
   </div> 
   );
