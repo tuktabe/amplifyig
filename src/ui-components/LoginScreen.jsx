@@ -12,8 +12,8 @@ export default function LoginScreen(props) {
   const { overrides, ...rest } = props;
   return (
     <View
-      width="375px"
-      height="662px"
+      width="376px"
+      height="667px"
       display="block"
       gap="unset"
       alignItems="unset"
@@ -21,7 +21,6 @@ export default function LoginScreen(props) {
       overflow="hidden"
       position="relative"
       padding="0px 0px 0px 0px"
-      backgroundColor="rgba(47,128,237,1)"
       {...getOverrideProps(overrides, "LoginScreen")}
       {...rest}
     >
@@ -102,6 +101,7 @@ export default function LoginScreen(props) {
         {...getOverrideProps(overrides, "Password")}
       ></Text>
       <View
+        padding="0px 0px 0px 0px"
         width="77px"
         height="32px"
         display="block"
@@ -109,36 +109,49 @@ export default function LoginScreen(props) {
         alignItems="unset"
         justifyContent="unset"
         position="absolute"
-        top="calc(50% - 16px - -76px)"
-        left="calc(50% - 38.5px - 2px)"
-        borderRadius="32px"
-        padding="0px 0px 0px 0px"
-        backgroundColor="rgba(229,229,229,1)"
-        {...getOverrideProps(overrides, "Rectangle 13")}
-      ></View>
-      <Text
-        fontFamily="Roboto"
-        fontSize="14px"
-        fontWeight="400"
-        color="rgba(0,0,0,1)"
-        textTransform="uppercase"
-        lineHeight="18.19999885559082px"
-        textAlign="left"
-        display="block"
-        direction="column"
-        justifyContent="unset"
-        width="57px"
-        height="21px"
-        gap="unset"
-        alignItems="unset"
-        position="absolute"
-        top="397px"
-        left="calc(50% - 28.5px - 0px)"
-        padding="0px 0px 0px 0px"
-        whiteSpace="pre-wrap"
-        children="Sign in"
-        {...getOverrideProps(overrides, "Sign in")}
-      ></Text>
+        top="379px"
+        left="111px"
+        {...getOverrideProps(overrides, "Group 13")}
+      >
+        <View
+          width="77px"
+          height="32px"
+          display="block"
+          gap="unset"
+          alignItems="unset"
+          justifyContent="unset"
+          position="absolute"
+          top="calc(50% - 16px - 0px)"
+          left="calc(50% - 38.5px - 0px)"
+          borderRadius="32px"
+          padding="0px 0px 0px 0px"
+          backgroundColor="rgba(229,229,229,1)"
+          {...getOverrideProps(overrides, "Rectangle 13")}
+        ></View>
+        <Text
+          fontFamily="Roboto"
+          fontSize="14px"
+          fontWeight="400"
+          color="rgba(0,0,0,1)"
+          textTransform="uppercase"
+          lineHeight="18.19999885559082px"
+          textAlign="left"
+          display="block"
+          direction="column"
+          justifyContent="unset"
+          width="56px"
+          height="18px"
+          gap="unset"
+          alignItems="unset"
+          position="absolute"
+          top="7px"
+          left="calc(50% - 28px - -2.5px)"
+          padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
+          children="Sign in"
+          {...getOverrideProps(overrides, "Sign in")}
+        ></Text>
+      </View>
       <Text
         fontFamily="Roboto"
         fontSize="40px"
@@ -155,12 +168,35 @@ export default function LoginScreen(props) {
         gap="unset"
         alignItems="unset"
         position="absolute"
-        top="126px"
-        left="126px"
+        top="61px"
+        left="70px"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-        children="filter"
-        {...getOverrideProps(overrides, "filter")}
+        children="PURR"
+        {...getOverrideProps(overrides, "PURR")}
+      ></Text>
+      <Text
+        fontFamily="Roboto"
+        fontSize="18px"
+        fontWeight="700"
+        color="rgba(255,255,255,1)"
+        textTransform="uppercase"
+        lineHeight="23.399999618530273px"
+        textAlign="left"
+        display="block"
+        direction="column"
+        justifyContent="unset"
+        width="148px"
+        height="30px"
+        gap="unset"
+        alignItems="unset"
+        position="absolute"
+        top="113px"
+        left="70px"
+        padding="0px 0px 0px 0px"
+        whiteSpace="pre-wrap"
+        children="Cat dating App"
+        {...getOverrideProps(overrides, "Cat dating App")}
       ></Text>
     </View>
   );

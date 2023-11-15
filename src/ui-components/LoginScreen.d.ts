@@ -23,9 +23,11 @@ export declare type LoginScreenOverridesProps = {
     Username?: PrimitiveOverrideProps<TextProps>;
     "Rectangle 11"?: PrimitiveOverrideProps<ViewProps>;
     Password?: PrimitiveOverrideProps<TextProps>;
+    "Group 13"?: PrimitiveOverrideProps<ViewProps>;
     "Rectangle 13"?: PrimitiveOverrideProps<ViewProps>;
     "Sign in"?: PrimitiveOverrideProps<TextProps>;
-    filter?: PrimitiveOverrideProps<TextProps>;
+    PURR?: PrimitiveOverrideProps<TextProps>;
+    "Cat dating App"?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type LoginScreenProps = React.PropsWithChildren<Partial<ViewProps> & {
     overrides?: LoginScreenOverridesProps | undefined | null;
