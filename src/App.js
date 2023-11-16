@@ -12,7 +12,19 @@ function App({ signOut }) {
     <Button onClick={signOut}>Sign Out</Button>
   </div> 
   );
+
+  return (
+    <div className="App">
+      <Tuktafeedfix />
+      <Button onClick={signOut}>Sign Out</Button>
+    </div> 
+    ); 
+
+
+
 }
 
 
 export default withAuthenticator(App)
+
+

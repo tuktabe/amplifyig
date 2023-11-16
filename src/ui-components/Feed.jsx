@@ -8,8 +8,8 @@
 import * as React from "react";
 import { getOverrideProps } from "./utils";
 import { Icon, Image, Text, View } from "@aws-amplify/ui-react";
-export default function Newfeed(props) {
-  const { post, overrides, ...rest } = props;
+export default function Feed(props) {
+  const { overrides, ...rest } = props;
   return (
     <View
       width="375px"
@@ -20,7 +20,7 @@ export default function Newfeed(props) {
       justifyContent="unset"
       position="relative"
       padding="0px 0px 0px 0px"
-      {...getOverrideProps(overrides, "Newfeed")}
+      {...getOverrideProps(overrides, "Feed")}
       {...rest}
     >
       <View
@@ -54,6 +54,95 @@ export default function Newfeed(props) {
           backgroundColor="rgba(0,0,0,1)"
           {...getOverrideProps(overrides, "Rectangle 24")}
         ></View>
+        <View
+          padding="0px 0px 0px 0px"
+          width="90px"
+          height="82px"
+          display="block"
+          gap="unset"
+          alignItems="unset"
+          justifyContent="unset"
+          position="absolute"
+          top="433px"
+          left="2px"
+          {...getOverrideProps(overrides, "Group 15")}
+        >
+          <Icon
+            width="90px"
+            height="82px"
+            viewBox={{ minX: 0, minY: 0, width: 90, height: 82 }}
+            paths={[
+              {
+                d: "M45 82C69.8528 82 90 63.6437 90 41C90 18.3563 69.8528 0 45 0C20.1472 0 0 18.3563 0 41C0 63.6437 20.1472 82 45 82Z",
+                fillRule: "evenodd",
+              },
+            ]}
+            display="block"
+            gap="unset"
+            alignItems="unset"
+            justifyContent="unset"
+            position="absolute"
+            top="0%"
+            bottom="0%"
+            left="0%"
+            right="0%"
+            {...getOverrideProps(overrides, "Oval5751003")}
+          ></Icon>
+          <Icon
+            width="90px"
+            height="82px"
+            viewBox={{ minX: 0, minY: 0, width: 90, height: 82 }}
+            paths={[
+              {
+                d: "M45 82C69.8528 82 90 63.6437 90 41C90 18.3563 69.8528 0 45 0C20.1472 0 0 18.3563 0 41C0 63.6437 20.1472 82 45 82Z",
+                fillRule: "evenodd",
+              },
+            ]}
+            display="block"
+            gap="unset"
+            alignItems="unset"
+            justifyContent="unset"
+            position="absolute"
+            top="0%"
+            bottom="0%"
+            left="0%"
+            right="0%"
+            {...getOverrideProps(overrides, "Oval5751005")}
+          ></Icon>
+          <View
+            padding="0px 0px 0px 0px"
+            width="77px"
+            height="72px"
+            display="block"
+            gap="unset"
+            alignItems="unset"
+            justifyContent="unset"
+            position="absolute"
+            top="5px"
+            left="6px"
+            {...getOverrideProps(overrides, "Group 14")}
+          >
+            <Icon
+              width="77px"
+              height="72px"
+              viewBox={{ minX: 0, minY: 0, width: 77, height: 72 }}
+              paths={[
+                {
+                  d: "M77 36C77 55.8823 59.763 72 38.5 72C17.237 72 0 55.8823 0 36C0 16.1177 17.237 0 38.5 0C59.763 0 77 16.1177 77 36Z",
+                  fillRule: "nonzero",
+                },
+              ]}
+              display="block"
+              gap="unset"
+              alignItems="unset"
+              justifyContent="unset"
+              position="absolute"
+              top="0px"
+              left="0px"
+              {...getOverrideProps(overrides, "Ellipse 283575976")}
+            ></Icon>
+          </View>
+        </View>
         <View
           width="375px"
           height="53px"
@@ -128,6 +217,23 @@ export default function Newfeed(props) {
           children="Add a comment"
           {...getOverrideProps(overrides, "Add a comment")}
         ></Text>
+        <Image
+          width="49px"
+          height="38px"
+          display="block"
+          gap="unset"
+          alignItems="unset"
+          justifyContent="unset"
+          position="absolute"
+          top="624px"
+          left="310px"
+          padding="0px 0px 0px 0px"
+          objectFit="cover"
+          {...getOverrideProps(
+            overrides,
+            "Isolated closeup shot of a gray cat looking into the camera"
+          )}
+        ></Image>
         <Text
           fontFamily="Roboto"
           fontSize="16px"
@@ -171,7 +277,7 @@ export default function Newfeed(props) {
           bottom="1.5%"
           left="4.53%"
           right="84.8%"
-          {...getOverrideProps(overrides, "Vector587167")}
+          {...getOverrideProps(overrides, "Vector575972")}
         ></Icon>
         <View
           width="46px"
@@ -207,7 +313,7 @@ export default function Newfeed(props) {
             bottom="12.5%"
             left="12.5%"
             right="12.5%"
-            {...getOverrideProps(overrides, "Vector587169")}
+            {...getOverrideProps(overrides, "Vector575974")}
           ></Icon>
         </View>
         <View
@@ -243,16 +349,16 @@ export default function Newfeed(props) {
           >
             <View
               padding="0px 0px 0px 0px"
-              width="58.9px"
-              height="55.02px"
+              width="126.9px"
+              height="58.02px"
               display="block"
               gap="unset"
               alignItems="unset"
               justifyContent="unset"
               position="absolute"
-              top="3px"
-              left="68px"
-              {...getOverrideProps(overrides, "Profile + Stories587172")}
+              top="0px"
+              left="0px"
+              {...getOverrideProps(overrides, "Profile + Stories573716")}
             >
               <Icon
                 width="58.9px"
@@ -274,12 +380,32 @@ export default function Newfeed(props) {
                 alignItems="unset"
                 justifyContent="unset"
                 position="absolute"
-                top="0%"
+                top="5.17%"
                 bottom="0%"
-                left="0%"
+                left="53.59%"
                 right="0%"
-                src={post?.image}
-                {...getOverrideProps(overrides, "Oval587173")}
+                {...getOverrideProps(overrides, "Oval573717")}
+              ></Icon>
+              <Icon
+                width="59px"
+                height="58px"
+                viewBox={{ minX: 0, minY: 0, width: 59, height: 58 }}
+                paths={[
+                  {
+                    d: "M29.5 58C45.7924 58 59 45.0163 59 29C59 12.9837 45.7924 0 29.5 0C13.2076 0 0 12.9837 0 29C0 45.0163 13.2076 58 29.5 58Z",
+                    fillRule: "evenodd",
+                  },
+                ]}
+                display="block"
+                gap="unset"
+                alignItems="unset"
+                justifyContent="unset"
+                position="absolute"
+                top="0%"
+                bottom="0.04%"
+                left="0%"
+                right="53.51%"
+                {...getOverrideProps(overrides, "Oval5761084")}
               ></Icon>
             </View>
             <View
@@ -293,7 +419,7 @@ export default function Newfeed(props) {
               position="absolute"
               top="3px"
               left="139px"
-              {...getOverrideProps(overrides, "Profile + Stories587175")}
+              {...getOverrideProps(overrides, "Profile + Stories5761077")}
             >
               <Icon
                 width="58.9px"
@@ -319,7 +445,7 @@ export default function Newfeed(props) {
                 bottom="0%"
                 left="0%"
                 right="0%"
-                {...getOverrideProps(overrides, "Oval587176")}
+                {...getOverrideProps(overrides, "Oval5761078")}
               ></Icon>
             </View>
             <View
@@ -333,7 +459,7 @@ export default function Newfeed(props) {
               position="absolute"
               top="3px"
               left="213px"
-              {...getOverrideProps(overrides, "Profile + Stories587177")}
+              {...getOverrideProps(overrides, "Profile + Stories5761079")}
             >
               <Icon
                 width="58.9px"
@@ -359,7 +485,7 @@ export default function Newfeed(props) {
                 bottom="0%"
                 left="0%"
                 right="0%"
-                {...getOverrideProps(overrides, "Oval587178")}
+                {...getOverrideProps(overrides, "Oval5761080")}
               ></Icon>
             </View>
             <View
@@ -373,7 +499,7 @@ export default function Newfeed(props) {
               position="absolute"
               top="4px"
               left="283px"
-              {...getOverrideProps(overrides, "Profile + Stories587179")}
+              {...getOverrideProps(overrides, "Profile + Stories5761081")}
             >
               <Icon
                 width="58.9px"
@@ -399,7 +525,7 @@ export default function Newfeed(props) {
                 bottom="0%"
                 left="0%"
                 right="0%"
-                {...getOverrideProps(overrides, "Oval587180")}
+                {...getOverrideProps(overrides, "Oval5761082")}
               ></Icon>
             </View>
             <View
@@ -428,7 +554,7 @@ export default function Newfeed(props) {
                 left="0px"
                 {...getOverrideProps(
                   overrides,
-                  "photo-1518829579054-df4bf5d42da7587182"
+                  "photo-1518829579054-df4bf5d42da7573734"
                 )}
               >
                 <Icon
@@ -438,7 +564,7 @@ export default function Newfeed(props) {
                     minX: 0,
                     minY: 0,
                     width: 53.2001953125,
-                    height: 49.7001953125,
+                    height: 49.699951171875,
                   }}
                   paths={[
                     {
@@ -490,7 +616,7 @@ export default function Newfeed(props) {
                   right="-105.08%"
                   {...getOverrideProps(
                     overrides,
-                    "photo-1518829579054-df4bf5d42da7587184"
+                    "photo-1518829579054-df4bf5d42da7573737"
                   )}
                 ></Icon>
               </View>
@@ -615,24 +741,30 @@ export default function Newfeed(props) {
               children="Andrea Sach"
               {...getOverrideProps(overrides, "Text Copy 4")}
             ></Text>
-            <Image
-              width="56px"
-              height="51px"
+            <Icon
+              width="57.32px"
+              height="48.29px"
+              viewBox={{
+                minX: 0,
+                minY: 0,
+                width: 57.322265625,
+                height: 48.292724609375,
+              }}
+              paths={[
+                {
+                  d: "M57.3222 24.1463C57.3222 37.482 44.4902 48.2927 28.6611 48.2927C12.832 48.2927 0 37.482 0 24.1463C0 10.8107 12.832 0 28.6611 0C44.4902 0 57.3222 10.8107 57.3222 24.1463Z",
+                  fillRule: "nonzero",
+                },
+              ]}
               display="block"
               gap="unset"
               alignItems="unset"
               justifyContent="unset"
               position="absolute"
-              top="4px"
+              top="5px"
               left="0px"
-              padding="0px 0px 0px 0px"
-              objectFit="cover"
-              src={post?.image}
-              {...getOverrideProps(
-                overrides,
-                "Isolated closeup shot of a gray cat looking into the camera587165"
-              )}
-            ></Image>
+              {...getOverrideProps(overrides, "Ellipse 2835751011")}
+            ></Icon>
             <View
               padding="0px 0px 0px 0px"
               width="21.85px"
@@ -643,7 +775,7 @@ export default function Newfeed(props) {
               justifyContent="unset"
               position="absolute"
               top="39px"
-              left="35px"
+              left="39px"
               {...getOverrideProps(overrides, "Add Button")}
             >
               <Icon
@@ -677,7 +809,7 @@ export default function Newfeed(props) {
                 bottom="0%"
                 left="0%"
                 right="0%"
-                {...getOverrideProps(overrides, "Oval587192")}
+                {...getOverrideProps(overrides, "Oval5761086")}
               ></Icon>
               <Icon
                 width="10.45px"
@@ -686,7 +818,7 @@ export default function Newfeed(props) {
                   minX: 0,
                   minY: 0,
                   width: 10.449951171875,
-                  height: 9.7626953125,
+                  height: 9.762451171875,
                 }}
                 paths={[
                   {
@@ -722,7 +854,7 @@ export default function Newfeed(props) {
                   borderRadius="0.7996257543563843px"
                   padding="0px 0px 0px 0px"
                   backgroundColor="rgba(255,255,255,1)"
-                  {...getOverrideProps(overrides, "Rectangle587194")}
+                  {...getOverrideProps(overrides, "Rectangle5761088")}
                 ></View>
                 <Icon
                   width="9.76px"
@@ -731,7 +863,7 @@ export default function Newfeed(props) {
                     minX: 0,
                     minY: 0,
                     width: 1.30615234375,
-                    height: 9.7626953125,
+                    height: 9.762451171875,
                   }}
                   paths={[
                     {
@@ -751,66 +883,12 @@ export default function Newfeed(props) {
                   right="28.42%"
                   transformOrigin="top left"
                   transform="rotate(90deg)"
-                  {...getOverrideProps(overrides, "Rectangle587195")}
+                  {...getOverrideProps(overrides, "Rectangle5761089")}
                 ></Icon>
               </Icon>
             </View>
           </View>
         </View>
-        <Image
-          width="56px"
-          height="51px"
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          position="absolute"
-          top="444px"
-          left="29px"
-          padding="0px 0px 0px 0px"
-          objectFit="cover"
-          src={post?.image}
-          {...getOverrideProps(
-            overrides,
-            "Isolated closeup shot of a gray cat looking into the camera587200"
-          )}
-        ></Image>
-        <Image
-          width="56px"
-          height="51px"
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          position="absolute"
-          top="618px"
-          left="303px"
-          padding="0px 0px 0px 0px"
-          objectFit="cover"
-          src={post?.image}
-          {...getOverrideProps(
-            overrides,
-            "Isolated closeup shot of a gray cat looking into the camera587202"
-          )}
-        ></Image>
-        <Image
-          width="327px"
-          height="222px"
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          position="absolute"
-          top="190px"
-          left="24px"
-          padding="0px 0px 0px 0px"
-          objectFit="cover"
-          src={post?.image}
-          {...getOverrideProps(
-            overrides,
-            "Isolated closeup shot of a gray cat looking into the camera587196"
-          )}
-        ></Image>
         <View
           width="375px"
           height="85px"
@@ -839,6 +917,20 @@ export default function Newfeed(props) {
           backgroundImage="linear-gradient(-90deg, rgba(234,148,225,1), rgba(217,217,217,0))"
           {...getOverrideProps(overrides, "Rectangle 29")}
         ></View>
+        <Image
+          width="236px"
+          height="105px"
+          display="block"
+          gap="unset"
+          alignItems="unset"
+          justifyContent="unset"
+          position="absolute"
+          top="0px"
+          left="72px"
+          padding="0px 0px 0px 0px"
+          objectFit="cover"
+          {...getOverrideProps(overrides, "Logo 2")}
+        ></Image>
       </View>
     </View>
   );

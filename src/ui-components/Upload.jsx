@@ -8,8 +8,8 @@
 import * as React from "react";
 import { getOverrideProps } from "./utils";
 import { Icon, Image, Text, View } from "@aws-amplify/ui-react";
-export default function Newfeed(props) {
-  const { post, overrides, ...rest } = props;
+export default function Upload(props) {
+  const { overrides, ...rest } = props;
   return (
     <View
       width="375px"
@@ -20,7 +20,7 @@ export default function Newfeed(props) {
       justifyContent="unset"
       position="relative"
       padding="0px 0px 0px 0px"
-      {...getOverrideProps(overrides, "Newfeed")}
+      {...getOverrideProps(overrides, "Upload")}
       {...rest}
     >
       <View
@@ -38,7 +38,7 @@ export default function Newfeed(props) {
         right="0%"
         padding="0px 0px 0px 0px"
         backgroundColor="rgba(255,255,255,1)"
-        {...getOverrideProps(overrides, "feed")}
+        {...getOverrideProps(overrides, "Photo Page Pink Theme")}
       >
         <View
           width="343px"
@@ -48,12 +48,195 @@ export default function Newfeed(props) {
           alignItems="unset"
           justifyContent="unset"
           position="absolute"
-          top="181px"
+          top="177px"
           left="16px"
           padding="0px 0px 0px 0px"
           backgroundColor="rgba(0,0,0,1)"
           {...getOverrideProps(overrides, "Rectangle 24")}
         ></View>
+        <View
+          padding="0px 0px 0px 0px"
+          width="90px"
+          height="82px"
+          display="block"
+          gap="unset"
+          alignItems="unset"
+          justifyContent="unset"
+          position="absolute"
+          top="433px"
+          left="2px"
+          {...getOverrideProps(overrides, "Group 15")}
+        >
+          <Icon
+            width="90px"
+            height="82px"
+            viewBox={{ minX: 0, minY: 0, width: 90, height: 82 }}
+            paths={[
+              {
+                d: "M45 82C69.8528 82 90 63.6437 90 41C90 18.3563 69.8528 0 45 0C20.1472 0 0 18.3563 0 41C0 63.6437 20.1472 82 45 82Z",
+                fillRule: "evenodd",
+              },
+            ]}
+            display="block"
+            gap="unset"
+            alignItems="unset"
+            justifyContent="unset"
+            position="absolute"
+            top="0%"
+            bottom="0%"
+            left="0%"
+            right="0%"
+            {...getOverrideProps(overrides, "Oval5808")}
+          ></Icon>
+          <Icon
+            width="90px"
+            height="82px"
+            viewBox={{ minX: 0, minY: 0, width: 90, height: 82 }}
+            paths={[
+              {
+                d: "M45 82C69.8528 82 90 63.6437 90 41C90 18.3563 69.8528 0 45 0C20.1472 0 0 18.3563 0 41C0 63.6437 20.1472 82 45 82Z",
+                fillRule: "evenodd",
+              },
+            ]}
+            display="block"
+            gap="unset"
+            alignItems="unset"
+            justifyContent="unset"
+            position="absolute"
+            top="0%"
+            bottom="0%"
+            left="0%"
+            right="0%"
+            {...getOverrideProps(overrides, "Oval5809")}
+          ></Icon>
+          <View
+            padding="0px 0px 0px 0px"
+            width="77px"
+            height="72px"
+            display="block"
+            gap="unset"
+            alignItems="unset"
+            justifyContent="unset"
+            position="absolute"
+            top="5px"
+            left="6px"
+            {...getOverrideProps(overrides, "Group 1458010")}
+          >
+            <Icon
+              width="77px"
+              height="72px"
+              viewBox={{ minX: 0, minY: 0, width: 77, height: 72 }}
+              paths={[
+                {
+                  d: "M77 36C77 55.8823 59.763 72 38.5 72C17.237 72 0 55.8823 0 36C0 16.1177 17.237 0 38.5 0C59.763 0 77 16.1177 77 36Z",
+                  fillRule: "nonzero",
+                },
+              ]}
+              display="block"
+              gap="unset"
+              alignItems="unset"
+              justifyContent="unset"
+              position="absolute"
+              top="0px"
+              left="0px"
+              {...getOverrideProps(overrides, "Ellipse 28358011")}
+            ></Icon>
+          </View>
+        </View>
+        <View
+          padding="0px 0px 0px 0px"
+          width="67px"
+          height="55px"
+          display="block"
+          gap="unset"
+          alignItems="unset"
+          justifyContent="unset"
+          position="absolute"
+          top="90px"
+          left="8px"
+          {...getOverrideProps(overrides, "Group 16")}
+        >
+          <Icon
+            width="67px"
+            height="55px"
+            viewBox={{ minX: 0, minY: 0, width: 67, height: 55 }}
+            paths={[
+              {
+                d: "M33.5 55C52.0015 55 67 42.6878 67 27.5C67 12.3122 52.0015 0 33.5 0C14.9985 0 0 12.3122 0 27.5C0 42.6878 14.9985 55 33.5 55Z",
+                fillRule: "evenodd",
+              },
+            ]}
+            display="block"
+            gap="unset"
+            alignItems="unset"
+            justifyContent="unset"
+            position="absolute"
+            top="0%"
+            bottom="0%"
+            left="0%"
+            right="0%"
+            {...getOverrideProps(overrides, "Oval58013")}
+          ></Icon>
+          <Icon
+            width="67px"
+            height="55px"
+            viewBox={{ minX: 0, minY: 0, width: 67, height: 55 }}
+            paths={[
+              {
+                d: "M33.5 55C52.0015 55 67 42.6878 67 27.5C67 12.3122 52.0015 0 33.5 0C14.9985 0 0 12.3122 0 27.5C0 42.6878 14.9985 55 33.5 55Z",
+                fillRule: "evenodd",
+              },
+            ]}
+            display="block"
+            gap="unset"
+            alignItems="unset"
+            justifyContent="unset"
+            position="absolute"
+            top="0%"
+            bottom="0%"
+            left="0%"
+            right="0%"
+            {...getOverrideProps(overrides, "Oval58014")}
+          ></Icon>
+          <View
+            padding="0px 0px 0px 0px"
+            width="57.32px"
+            height="48.29px"
+            display="block"
+            gap="unset"
+            alignItems="unset"
+            justifyContent="unset"
+            position="absolute"
+            top="3.35px"
+            left="4.47px"
+            {...getOverrideProps(overrides, "Group 1458015")}
+          >
+            <Icon
+              width="57.32px"
+              height="48.29px"
+              viewBox={{
+                minX: 0,
+                minY: 0,
+                width: 57.322265625,
+                height: 48.292724609375,
+              }}
+              paths={[
+                {
+                  d: "M57.3222 24.1463C57.3222 37.482 44.4902 48.2927 28.6611 48.2927C12.832 48.2927 0 37.482 0 24.1463C0 10.8107 12.832 0 28.6611 0C44.4902 0 57.3222 10.8107 57.3222 24.1463Z",
+                  fillRule: "nonzero",
+                },
+              ]}
+              display="block"
+              gap="unset"
+              alignItems="unset"
+              justifyContent="unset"
+              position="absolute"
+              top="0px"
+              left="0px"
+              {...getOverrideProps(overrides, "Ellipse 28358016")}
+            ></Icon>
+          </View>
+        </View>
         <View
           width="375px"
           height="53px"
@@ -128,6 +311,23 @@ export default function Newfeed(props) {
           children="Add a comment"
           {...getOverrideProps(overrides, "Add a comment")}
         ></Text>
+        <Image
+          width="49px"
+          height="38px"
+          display="block"
+          gap="unset"
+          alignItems="unset"
+          justifyContent="unset"
+          position="absolute"
+          top="624px"
+          left="310px"
+          padding="0px 0px 0px 0px"
+          objectFit="cover"
+          {...getOverrideProps(
+            overrides,
+            "Isolated closeup shot of a gray cat looking into the camera"
+          )}
+        ></Image>
         <Text
           fontFamily="Roboto"
           fontSize="16px"
@@ -171,7 +371,7 @@ export default function Newfeed(props) {
           bottom="1.5%"
           left="4.53%"
           right="84.8%"
-          {...getOverrideProps(overrides, "Vector587167")}
+          {...getOverrideProps(overrides, "Vector58023")}
         ></Icon>
         <View
           width="46px"
@@ -207,7 +407,7 @@ export default function Newfeed(props) {
             bottom="12.5%"
             left="12.5%"
             right="12.5%"
-            {...getOverrideProps(overrides, "Vector587169")}
+            {...getOverrideProps(overrides, "Vector58025")}
           ></Icon>
         </View>
         <View
@@ -250,9 +450,9 @@ export default function Newfeed(props) {
               alignItems="unset"
               justifyContent="unset"
               position="absolute"
-              top="3px"
-              left="68px"
-              {...getOverrideProps(overrides, "Profile + Stories587172")}
+              top="0px"
+              left="67.45px"
+              {...getOverrideProps(overrides, "Profile + Stories")}
             >
               <Icon
                 width="58.9px"
@@ -278,8 +478,7 @@ export default function Newfeed(props) {
                 bottom="0%"
                 left="0%"
                 right="0%"
-                src={post?.image}
-                {...getOverrideProps(overrides, "Oval587173")}
+                {...getOverrideProps(overrides, "Oval58029")}
               ></Icon>
             </View>
             <View
@@ -291,9 +490,9 @@ export default function Newfeed(props) {
               alignItems="unset"
               justifyContent="unset"
               position="absolute"
-              top="3px"
-              left="139px"
-              {...getOverrideProps(overrides, "Profile + Stories587175")}
+              top="0px"
+              left="137.75px"
+              {...getOverrideProps(overrides, "Profile + Stories Copy")}
             >
               <Icon
                 width="58.9px"
@@ -319,102 +518,48 @@ export default function Newfeed(props) {
                 bottom="0%"
                 left="0%"
                 right="0%"
-                {...getOverrideProps(overrides, "Oval587176")}
+                {...getOverrideProps(overrides, "Oval58031")}
               ></Icon>
             </View>
             <View
               padding="0px 0px 0px 0px"
-              width="58.9px"
-              height="55.02px"
-              display="block"
-              gap="unset"
-              alignItems="unset"
-              justifyContent="unset"
-              position="absolute"
-              top="3px"
-              left="213px"
-              {...getOverrideProps(overrides, "Profile + Stories587177")}
-            >
-              <Icon
-                width="58.9px"
-                height="55.02px"
-                viewBox={{
-                  minX: 0,
-                  minY: 0,
-                  width: 58.89990234375,
-                  height: 55.02490234375,
-                }}
-                paths={[
-                  {
-                    d: "M29.45 55.025C45.7148 55.025 58.9 42.7072 58.9 27.5125C58.9 12.3178 45.7148 0 29.45 0C13.1852 0 0 12.3178 0 27.5125C0 42.7072 13.1852 55.025 29.45 55.025Z",
-                    fillRule: "evenodd",
-                  },
-                ]}
-                display="block"
-                gap="unset"
-                alignItems="unset"
-                justifyContent="unset"
-                position="absolute"
-                top="0%"
-                bottom="0%"
-                left="0%"
-                right="0%"
-                {...getOverrideProps(overrides, "Oval587178")}
-              ></Icon>
-            </View>
-            <View
-              padding="0px 0px 0px 0px"
-              width="58.9px"
-              height="55.02px"
-              display="block"
-              gap="unset"
-              alignItems="unset"
-              justifyContent="unset"
-              position="absolute"
-              top="4px"
-              left="283px"
-              {...getOverrideProps(overrides, "Profile + Stories587179")}
-            >
-              <Icon
-                width="58.9px"
-                height="55.02px"
-                viewBox={{
-                  minX: 0,
-                  minY: 0,
-                  width: 58.89990234375,
-                  height: 55.02490234375,
-                }}
-                paths={[
-                  {
-                    d: "M29.45 55.025C45.7148 55.025 58.9 42.7072 58.9 27.5125C58.9 12.3178 45.7148 0 29.45 0C13.1852 0 0 12.3178 0 27.5125C0 42.7072 13.1852 55.025 29.45 55.025Z",
-                    fillRule: "evenodd",
-                  },
-                ]}
-                display="block"
-                gap="unset"
-                alignItems="unset"
-                justifyContent="unset"
-                position="absolute"
-                top="0%"
-                bottom="0%"
-                left="0%"
-                right="0%"
-                {...getOverrideProps(overrides, "Oval587180")}
-              ></Icon>
-            </View>
-            <View
-              padding="0px 0px 0px 0px"
-              width="53.2px"
-              height="49.7px"
+              width="233.1px"
+              height="73.02px"
               display="block"
               gap="unset"
               alignItems="unset"
               justifyContent="unset"
               position="absolute"
               top="-18px"
-              left="390.9px"
+              left="211px"
               {...getOverrideProps(overrides, "Profile + Stories Copy 2")}
             >
+              <Icon
+                width="58.9px"
+                height="55.02px"
+                viewBox={{
+                  minX: 0,
+                  minY: 0,
+                  width: 58.89990234375,
+                  height: 55.02490234375,
+                }}
+                paths={[
+                  {
+                    d: "M29.45 55.025C45.7148 55.025 58.9 42.7072 58.9 27.5125C58.9 12.3178 45.7148 0 29.45 0C13.1852 0 0 12.3178 0 27.5125C0 42.7072 13.1852 55.025 29.45 55.025Z",
+                    fillRule: "evenodd",
+                  },
+                ]}
+                display="block"
+                gap="unset"
+                alignItems="unset"
+                justifyContent="unset"
+                position="absolute"
+                top="24.65%"
+                bottom="0%"
+                left="0%"
+                right="74.73%"
+                {...getOverrideProps(overrides, "Oval58033")}
+              ></Icon>
               <View
                 padding="0px 0px 0px 0px"
                 width="53.2px"
@@ -425,10 +570,10 @@ export default function Newfeed(props) {
                 justifyContent="unset"
                 position="absolute"
                 top="0px"
-                left="0px"
+                left="179.9px"
                 {...getOverrideProps(
                   overrides,
-                  "photo-1518829579054-df4bf5d42da7587182"
+                  "photo-1518829579054-df4bf5d42da758034"
                 )}
               >
                 <Icon
@@ -438,7 +583,7 @@ export default function Newfeed(props) {
                     minX: 0,
                     minY: 0,
                     width: 53.2001953125,
-                    height: 49.7001953125,
+                    height: 49.699951171875,
                   }}
                   paths={[
                     {
@@ -490,10 +635,50 @@ export default function Newfeed(props) {
                   right="-105.08%"
                   {...getOverrideProps(
                     overrides,
-                    "photo-1518829579054-df4bf5d42da7587184"
+                    "photo-1518829579054-df4bf5d42da758036"
                   )}
                 ></Icon>
               </View>
+            </View>
+            <View
+              padding="0px 0px 0px 0px"
+              width="58.9px"
+              height="55.02px"
+              display="block"
+              gap="unset"
+              alignItems="unset"
+              justifyContent="unset"
+              position="absolute"
+              top="0px"
+              left="283.1px"
+              {...getOverrideProps(overrides, "Profile + Stories Copy 3")}
+            >
+              <Icon
+                width="58.9px"
+                height="55.02px"
+                viewBox={{
+                  minX: 0,
+                  minY: 0,
+                  width: 58.89990234375,
+                  height: 55.02490234375,
+                }}
+                paths={[
+                  {
+                    d: "M29.45 55.025C45.7148 55.025 58.9 42.7072 58.9 27.5125C58.9 12.3178 45.7148 0 29.45 0C13.1852 0 0 12.3178 0 27.5125C0 42.7072 13.1852 55.025 29.45 55.025Z",
+                    fillRule: "evenodd",
+                  },
+                ]}
+                display="block"
+                gap="unset"
+                alignItems="unset"
+                justifyContent="unset"
+                position="absolute"
+                top="0%"
+                bottom="0%"
+                left="0%"
+                right="0%"
+                {...getOverrideProps(overrides, "Oval58038")}
+              ></Icon>
             </View>
             <Text
               fontFamily="Poppins"
@@ -615,24 +800,6 @@ export default function Newfeed(props) {
               children="Andrea Sach"
               {...getOverrideProps(overrides, "Text Copy 4")}
             ></Text>
-            <Image
-              width="56px"
-              height="51px"
-              display="block"
-              gap="unset"
-              alignItems="unset"
-              justifyContent="unset"
-              position="absolute"
-              top="4px"
-              left="0px"
-              padding="0px 0px 0px 0px"
-              objectFit="cover"
-              src={post?.image}
-              {...getOverrideProps(
-                overrides,
-                "Isolated closeup shot of a gray cat looking into the camera587165"
-              )}
-            ></Image>
             <View
               padding="0px 0px 0px 0px"
               width="21.85px"
@@ -642,8 +809,8 @@ export default function Newfeed(props) {
               alignItems="unset"
               justifyContent="unset"
               position="absolute"
-              top="39px"
-              left="35px"
+              top="38px"
+              left="39px"
               {...getOverrideProps(overrides, "Add Button")}
             >
               <Icon
@@ -677,7 +844,7 @@ export default function Newfeed(props) {
                 bottom="0%"
                 left="0%"
                 right="0%"
-                {...getOverrideProps(overrides, "Oval587192")}
+                {...getOverrideProps(overrides, "Oval58045")}
               ></Icon>
               <Icon
                 width="10.45px"
@@ -685,8 +852,8 @@ export default function Newfeed(props) {
                 viewBox={{
                   minX: 0,
                   minY: 0,
-                  width: 10.449951171875,
-                  height: 9.7626953125,
+                  width: 10.4501953125,
+                  height: 9.762451171875,
                 }}
                 paths={[
                   {
@@ -722,7 +889,7 @@ export default function Newfeed(props) {
                   borderRadius="0.7996257543563843px"
                   padding="0px 0px 0px 0px"
                   backgroundColor="rgba(255,255,255,1)"
-                  {...getOverrideProps(overrides, "Rectangle587194")}
+                  {...getOverrideProps(overrides, "Rectangle58047")}
                 ></View>
                 <Icon
                   width="9.76px"
@@ -731,7 +898,7 @@ export default function Newfeed(props) {
                     minX: 0,
                     minY: 0,
                     width: 1.30615234375,
-                    height: 9.7626953125,
+                    height: 9.762451171875,
                   }}
                   paths={[
                     {
@@ -751,66 +918,12 @@ export default function Newfeed(props) {
                   right="28.42%"
                   transformOrigin="top left"
                   transform="rotate(90deg)"
-                  {...getOverrideProps(overrides, "Rectangle587195")}
+                  {...getOverrideProps(overrides, "Rectangle58048")}
                 ></Icon>
               </Icon>
             </View>
           </View>
         </View>
-        <Image
-          width="56px"
-          height="51px"
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          position="absolute"
-          top="444px"
-          left="29px"
-          padding="0px 0px 0px 0px"
-          objectFit="cover"
-          src={post?.image}
-          {...getOverrideProps(
-            overrides,
-            "Isolated closeup shot of a gray cat looking into the camera587200"
-          )}
-        ></Image>
-        <Image
-          width="56px"
-          height="51px"
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          position="absolute"
-          top="618px"
-          left="303px"
-          padding="0px 0px 0px 0px"
-          objectFit="cover"
-          src={post?.image}
-          {...getOverrideProps(
-            overrides,
-            "Isolated closeup shot of a gray cat looking into the camera587202"
-          )}
-        ></Image>
-        <Image
-          width="327px"
-          height="222px"
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          position="absolute"
-          top="190px"
-          left="24px"
-          padding="0px 0px 0px 0px"
-          objectFit="cover"
-          src={post?.image}
-          {...getOverrideProps(
-            overrides,
-            "Isolated closeup shot of a gray cat looking into the camera587196"
-          )}
-        ></Image>
         <View
           width="375px"
           height="85px"
@@ -836,9 +949,122 @@ export default function Newfeed(props) {
           top="0px"
           left="0px"
           padding="0px 0px 0px 0px"
-          backgroundImage="linear-gradient(-90deg, rgba(234,148,225,1), rgba(217,217,217,0))"
+          backgroundImage="linear-gradient(-90deg, rgba(225,145,217,1), rgba(217,217,217,0))"
           {...getOverrideProps(overrides, "Rectangle 29")}
         ></View>
+        <Image
+          width="236px"
+          height="105px"
+          display="block"
+          gap="unset"
+          alignItems="unset"
+          justifyContent="unset"
+          position="absolute"
+          top="0px"
+          left="70px"
+          padding="0px 0px 0px 0px"
+          objectFit="cover"
+          {...getOverrideProps(overrides, "Logo 1")}
+        ></Image>
+        <View
+          width="82px"
+          height="63px"
+          display="block"
+          gap="unset"
+          alignItems="unset"
+          justifyContent="unset"
+          overflow="hidden"
+          position="absolute"
+          top="252px"
+          left="145px"
+          padding="0px 0px 0px 0px"
+          {...getOverrideProps(overrides, "lucide:upload")}
+        ></View>
+        <Icon
+          width="61.5px"
+          height="47.25px"
+          viewBox={{ minX: 0, minY: 0, width: 61.5, height: 47.25 }}
+          paths={[
+            {
+              d: "M62.5 31.5C62.5 30.9477 62.0523 30.5 61.5 30.5C60.9477 30.5 60.5 30.9477 60.5 31.5L62.5 31.5ZM0 42L-1 42L0 42ZM1 31.5C1 30.9477 0.552285 30.5 0 30.5C-0.552285 30.5 -1 30.9477 -1 31.5L1 31.5ZM47.2241 13.918C47.662 14.2545 48.2898 14.1722 48.6263 13.7342C48.9628 13.2963 48.8805 12.6685 48.4426 12.332L47.2241 13.918ZM30.75 0L31.3592 -0.792983C31 -1.06901 30.5 -1.06901 30.1408 -0.792983L30.75 0ZM13.0574 12.332C12.6195 12.6685 12.5372 13.2963 12.8737 13.7342C13.2102 14.1722 13.838 14.2545 14.2759 13.918L13.0574 12.332ZM29.75 31.5C29.75 32.0523 30.1977 32.5 30.75 32.5C31.3023 32.5 31.75 32.0523 31.75 31.5L29.75 31.5ZM60.5 31.5L60.5 42L62.5 42L62.5 31.5L60.5 31.5ZM60.5 42C60.5 43.0293 59.9692 44.0897 58.8893 44.9193L60.1078 46.5053C61.5909 45.3658 62.5 43.7555 62.5 42L60.5 42ZM58.8893 44.9193C57.8036 45.7534 56.2868 46.25 54.6667 46.25L54.6667 48.25C56.6712 48.25 58.6305 47.6403 60.1078 46.5053L58.8893 44.9193ZM54.6667 46.25L6.83333 46.25L6.83333 48.25L54.6667 48.25L54.6667 46.25ZM6.83333 46.25C5.21319 46.25 3.69635 45.7534 2.61068 44.9193L1.39219 46.5053C2.86952 47.6403 4.82885 48.25 6.83333 48.25L6.83333 46.25ZM2.61068 44.9193C1.53079 44.0897 1 43.0293 1 42L-1 42C-1 43.7555 -0.09091 45.3658 1.39219 46.5053L2.61068 44.9193ZM1 42L1 31.5L-1 31.5L-1 42L1 42ZM48.4426 12.332L31.3592 -0.792983L30.1408 0.792983L47.2241 13.918L48.4426 12.332ZM30.1408 -0.792983L13.0574 12.332L14.2759 13.918L31.3592 0.792983L30.1408 -0.792983ZM29.75 0L29.75 31.5L31.75 31.5L31.75 0L29.75 0Z",
+              stroke: "rgba(255,255,255,1)",
+              fillRule: "nonzero",
+              strokeLinejoin: "round",
+              strokeWidth: 2,
+            },
+          ]}
+          display="block"
+          gap="unset"
+          alignItems="unset"
+          justifyContent="unset"
+          position="absolute"
+          top="40.33%"
+          bottom="52.59%"
+          left="42.67%"
+          right="40.93%"
+          {...getOverrideProps(overrides, "Vector58053")}
+        ></Icon>
+        <View
+          width="101px"
+          height="33px"
+          display="block"
+          gap="unset"
+          alignItems="unset"
+          justifyContent="unset"
+          position="absolute"
+          top="330px"
+          left="137px"
+          borderRadius="50px"
+          padding="0px 0px 0px 0px"
+          backgroundColor="rgba(217,217,217,1)"
+          {...getOverrideProps(overrides, "Rectangle 33")}
+        ></View>
+        <Text
+          fontFamily="Roboto"
+          fontSize="16px"
+          fontWeight="700"
+          color="rgba(0,0,0,1)"
+          textTransform="capitalize"
+          lineHeight="20.799999237060547px"
+          textAlign="left"
+          display="block"
+          direction="column"
+          justifyContent="unset"
+          width="70px"
+          height="18px"
+          gap="unset"
+          alignItems="unset"
+          position="absolute"
+          top="338px"
+          left="158px"
+          padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
+          children="Upload"
+          {...getOverrideProps(overrides, "Upload58055")}
+        ></Text>
+        <Text
+          fontFamily="Roboto"
+          fontSize="16px"
+          fontWeight="700"
+          color="rgba(255,255,255,1)"
+          textTransform="capitalize"
+          lineHeight="20.799999237060547px"
+          textAlign="left"
+          display="block"
+          direction="column"
+          justifyContent="unset"
+          width="153px"
+          height="20px"
+          gap="unset"
+          alignItems="unset"
+          position="absolute"
+          top="235px"
+          left="122px"
+          padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
+          children="Show your cat photo&#xA;"
+          {...getOverrideProps(overrides, "Show your cat photo")}
+        ></Text>
       </View>
     </View>
   );

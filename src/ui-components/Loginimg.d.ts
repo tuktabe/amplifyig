@@ -5,6 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
+import { IsolatedcloseupshotofagraycatlookingintothecameraProps } from "./Isolatedcloseupshotofagraycatlookingintothecamera";
 import { TextProps, ViewProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
@@ -17,21 +18,23 @@ export declare type Variant = {
     overrides: EscapeHatchProps;
 };
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
-export declare type LoginScreenOverridesProps = {
-    LoginScreen?: PrimitiveOverrideProps<ViewProps>;
-    "Rectangle 6"?: PrimitiveOverrideProps<ViewProps>;
-    Username?: PrimitiveOverrideProps<TextProps>;
-    "Rectangle 11"?: PrimitiveOverrideProps<ViewProps>;
-    Password?: PrimitiveOverrideProps<TextProps>;
-    "Group 13"?: PrimitiveOverrideProps<ViewProps>;
-    "Rectangle 13"?: PrimitiveOverrideProps<ViewProps>;
-    "Sign in"?: PrimitiveOverrideProps<TextProps>;
+export declare type LoginimgOverridesProps = {
+    Loginimg?: PrimitiveOverrideProps<ViewProps>;
+    newloginform?: PrimitiveOverrideProps<ViewProps>;
+    "Isolated closeup shot of a gray cat looking into the camera"?: IsolatedcloseupshotofagraycatlookingintothecameraProps;
     PURR?: PrimitiveOverrideProps<TextProps>;
     "Cat dating App"?: PrimitiveOverrideProps<TextProps>;
+    "Rectangle 15598508"?: PrimitiveOverrideProps<ViewProps>;
+    Username?: PrimitiveOverrideProps<TextProps>;
+    "Rectangle 15598510"?: PrimitiveOverrideProps<ViewProps>;
+    Password?: PrimitiveOverrideProps<TextProps>;
+    "Group 14"?: PrimitiveOverrideProps<ViewProps>;
+    "Rectangle 13"?: PrimitiveOverrideProps<ViewProps>;
+    "Sign in"?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
-export declare type LoginScreenProps = React.PropsWithChildren<Partial<ViewProps> & {
+export declare type LoginimgProps = React.PropsWithChildren<Partial<ViewProps> & {
     login?: any;
 } & {
-    overrides?: LoginScreenOverridesProps | undefined | null;
+    overrides?: LoginimgOverridesProps | undefined | null;
 }>;
-export default function LoginScreen(props: LoginScreenProps): React.ReactElement;
+export default function Loginimg(props: LoginimgProps): React.ReactElement;

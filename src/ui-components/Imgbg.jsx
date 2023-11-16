@@ -7,12 +7,12 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
-import { Text, View } from "@aws-amplify/ui-react";
-export default function LoginScreen(props) {
-  const { login, overrides, ...rest } = props;
+import { Image, Text, View } from "@aws-amplify/ui-react";
+export default function Imgbg(props) {
+  const { overrides, ...rest } = props;
   return (
     <View
-      width="376px"
+      width="375px"
       height="667px"
       display="block"
       gap="unset"
@@ -21,10 +21,96 @@ export default function LoginScreen(props) {
       overflow="hidden"
       position="relative"
       padding="0px 0px 0px 0px"
-      src={login?.image}
-      {...getOverrideProps(overrides, "LoginScreen")}
+      backgroundColor="rgba(255,255,255,1)"
+      {...getOverrideProps(overrides, "Imgbg")}
       {...rest}
     >
+      <Image
+        width="375px"
+        height="667px"
+        display="block"
+        gap="unset"
+        alignItems="unset"
+        justifyContent="unset"
+        position="absolute"
+        top="0px"
+        left="0px"
+        padding="0px 0px 0px 0px"
+        objectFit="cover"
+        {...getOverrideProps(
+          overrides,
+          "Isolated closeup shot of a gray cat looking into the camera"
+        )}
+      ></Image>
+      <Text
+        fontFamily="Roboto"
+        fontSize="40px"
+        fontWeight="700"
+        color="rgba(255,255,255,1)"
+        textTransform="uppercase"
+        lineHeight="52px"
+        textAlign="left"
+        display="block"
+        direction="column"
+        justifyContent="unset"
+        width="unset"
+        height="unset"
+        gap="unset"
+        alignItems="unset"
+        position="absolute"
+        top="69px"
+        left="48px"
+        padding="0px 0px 0px 0px"
+        whiteSpace="pre-wrap"
+        children="PURR"
+        {...getOverrideProps(overrides, "PURR598517")}
+      ></Text>
+      <Text
+        fontFamily="Roboto"
+        fontSize="40px"
+        fontWeight="700"
+        color="rgba(255,255,255,1)"
+        textTransform="uppercase"
+        lineHeight="52px"
+        textAlign="left"
+        display="block"
+        direction="column"
+        justifyContent="unset"
+        width="unset"
+        height="unset"
+        gap="unset"
+        alignItems="unset"
+        position="absolute"
+        top="69px"
+        left="48px"
+        padding="0px 0px 0px 0px"
+        whiteSpace="pre-wrap"
+        children="PURR"
+        {...getOverrideProps(overrides, "PURR599224")}
+      ></Text>
+      <Text
+        fontFamily="Roboto"
+        fontSize="18px"
+        fontWeight="700"
+        color="rgba(255,255,255,1)"
+        textTransform="uppercase"
+        lineHeight="23.399999618530273px"
+        textAlign="left"
+        display="block"
+        direction="column"
+        justifyContent="unset"
+        width="148px"
+        height="30px"
+        gap="unset"
+        alignItems="unset"
+        position="absolute"
+        top="121px"
+        left="33px"
+        padding="0px 0px 0px 0px"
+        whiteSpace="pre-wrap"
+        children="Cat dating App"
+        {...getOverrideProps(overrides, "Cat dating App")}
+      ></Text>
       <View
         width="250px"
         height="30px"
@@ -33,12 +119,12 @@ export default function LoginScreen(props) {
         alignItems="unset"
         justifyContent="unset"
         position="absolute"
-        top="263px"
-        left="63px"
+        top="251px"
+        left="57px"
         padding="0px 0px 0px 0px"
         backgroundColor="rgba(255,255,255,1)"
         opacity="0.25"
-        {...getOverrideProps(overrides, "Rectangle 6")}
+        {...getOverrideProps(overrides, "Rectangle 15598521")}
       ></View>
       <Text
         fontFamily="Roboto"
@@ -56,8 +142,8 @@ export default function LoginScreen(props) {
         gap="unset"
         alignItems="unset"
         position="absolute"
-        top="269px"
-        left="67px"
+        top="257px"
+        left="77px"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
         children="Username"
@@ -71,12 +157,12 @@ export default function LoginScreen(props) {
         alignItems="unset"
         justifyContent="unset"
         position="absolute"
-        top="304px"
-        left="63px"
+        top="298px"
+        left="56px"
         padding="0px 0px 0px 0px"
         backgroundColor="rgba(255,255,255,1)"
         opacity="0.25"
-        {...getOverrideProps(overrides, "Rectangle 11")}
+        {...getOverrideProps(overrides, "Rectangle 15598519")}
       ></View>
       <Text
         fontFamily="Roboto"
@@ -94,8 +180,8 @@ export default function LoginScreen(props) {
         gap="unset"
         alignItems="unset"
         position="absolute"
-        top="307px"
-        left="69px"
+        top="301px"
+        left="77px"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
         children="Password"
@@ -110,9 +196,9 @@ export default function LoginScreen(props) {
         alignItems="unset"
         justifyContent="unset"
         position="absolute"
-        top="379px"
-        left="111px"
-        {...getOverrideProps(overrides, "Group 13")}
+        top="376px"
+        left="143px"
+        {...getOverrideProps(overrides, "Group 14")}
       >
         <View
           width="77px"
@@ -153,52 +239,6 @@ export default function LoginScreen(props) {
           {...getOverrideProps(overrides, "Sign in")}
         ></Text>
       </View>
-      <Text
-        fontFamily="Roboto"
-        fontSize="40px"
-        fontWeight="700"
-        color="rgba(255,255,255,1)"
-        textTransform="uppercase"
-        lineHeight="52px"
-        textAlign="left"
-        display="block"
-        direction="column"
-        justifyContent="unset"
-        width="unset"
-        height="unset"
-        gap="unset"
-        alignItems="unset"
-        position="absolute"
-        top="61px"
-        left="70px"
-        padding="0px 0px 0px 0px"
-        whiteSpace="pre-wrap"
-        children="PURR"
-        {...getOverrideProps(overrides, "PURR")}
-      ></Text>
-      <Text
-        fontFamily="Roboto"
-        fontSize="18px"
-        fontWeight="700"
-        color="rgba(255,255,255,1)"
-        textTransform="uppercase"
-        lineHeight="23.399999618530273px"
-        textAlign="left"
-        display="block"
-        direction="column"
-        justifyContent="unset"
-        width="148px"
-        height="30px"
-        gap="unset"
-        alignItems="unset"
-        position="absolute"
-        top="113px"
-        left="70px"
-        padding="0px 0px 0px 0px"
-        whiteSpace="pre-wrap"
-        children="Cat dating App"
-        {...getOverrideProps(overrides, "Cat dating App")}
-      ></Text>
     </View>
   );
 }

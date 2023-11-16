@@ -20,11 +20,6 @@ export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes
 export declare type Profilepage1OverridesProps = {
     Profilepage1?: PrimitiveOverrideProps<ViewProps>;
     "Profile page"?: PrimitiveOverrideProps<ViewProps>;
-    "Group 15"?: PrimitiveOverrideProps<ViewProps>;
-    Oval582148?: PrimitiveOverrideProps<IconProps>;
-    Oval582149?: PrimitiveOverrideProps<IconProps>;
-    "Group 14"?: PrimitiveOverrideProps<ViewProps>;
-    "Ellipse 283"?: PrimitiveOverrideProps<IconProps>;
     "Rectangle 17"?: PrimitiveOverrideProps<ViewProps>;
     "Isolated closeup shot of a gray cat looking into the camera582153"?: PrimitiveOverrideProps<ImageProps>;
     Vector582154?: PrimitiveOverrideProps<IconProps>;
@@ -56,6 +51,9 @@ export declare type Profilepage1OverridesProps = {
     Message?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type Profilepage1Props = React.PropsWithChildren<Partial<ViewProps> & {
+    post?: any;
+    src?: any;
+} & {
     overrides?: Profilepage1OverridesProps | undefined | null;
 }>;
 export default function Profilepage1(props: Profilepage1Props): React.ReactElement;

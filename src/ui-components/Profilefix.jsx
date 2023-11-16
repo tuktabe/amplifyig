@@ -8,8 +8,8 @@
 import * as React from "react";
 import { getOverrideProps } from "./utils";
 import { Icon, Image, Text, View } from "@aws-amplify/ui-react";
-export default function Profilepage1(props) {
-  const { post, src, overrides, ...rest } = props;
+export default function Profilefix(props) {
+  const { post, overrides, ...rest } = props;
   return (
     <View
       width="375px"
@@ -20,7 +20,7 @@ export default function Profilepage1(props) {
       justifyContent="unset"
       position="relative"
       padding="0px 0px 0px 0px"
-      {...getOverrideProps(overrides, "Profilepage1")}
+      {...getOverrideProps(overrides, "Profilefix")}
       {...rest}
     >
       <View
@@ -69,7 +69,7 @@ export default function Profilepage1(props) {
           src={post?.image}
           {...getOverrideProps(
             overrides,
-            "Isolated closeup shot of a gray cat looking into the camera582153"
+            "Isolated closeup shot of a gray cat looking into the camera605276"
           )}
         ></Image>
         <Icon
@@ -92,7 +92,7 @@ export default function Profilepage1(props) {
           bottom="1.5%"
           left="4.53%"
           right="84.8%"
-          {...getOverrideProps(overrides, "Vector582154")}
+          {...getOverrideProps(overrides, "Vector605277")}
         ></Icon>
         <View
           width="46px"
@@ -128,7 +128,7 @@ export default function Profilepage1(props) {
             bottom="12.5%"
             left="12.5%"
             right="12.5%"
-            {...getOverrideProps(overrides, "Vector582156")}
+            {...getOverrideProps(overrides, "Vector605279")}
           ></Icon>
         </View>
         <View
@@ -238,7 +238,25 @@ export default function Profilepage1(props) {
           src={post?.image}
           {...getOverrideProps(
             overrides,
-            "Isolated closeup shot of a gray cat looking into the camera582164"
+            "Isolated closeup shot of a gray cat looking into the camera605286"
+          )}
+        ></Image>
+        <Image
+          width="144px"
+          height="145px"
+          display="block"
+          gap="unset"
+          alignItems="unset"
+          justifyContent="unset"
+          position="absolute"
+          top="25px"
+          left="115px"
+          padding="0px 0px 0px 0px"
+          objectFit="cover"
+          src={post?.image}
+          {...getOverrideProps(
+            overrides,
+            "Isolated closeup shot of a gray cat looking into the camera605304"
           )}
         ></Image>
         <Image
@@ -256,7 +274,7 @@ export default function Profilepage1(props) {
           src={post?.image}
           {...getOverrideProps(
             overrides,
-            "Isolated closeup shot of a gray cat looking into the camera582165"
+            "Isolated closeup shot of a gray cat looking into the camera605287"
           )}
         ></Image>
         <Image
@@ -274,7 +292,7 @@ export default function Profilepage1(props) {
           src={post?.image}
           {...getOverrideProps(
             overrides,
-            "Isolated closeup shot of a gray cat looking into the camera582166"
+            "Isolated closeup shot of a gray cat looking into the camera605288"
           )}
         ></Image>
         <Image
@@ -292,7 +310,7 @@ export default function Profilepage1(props) {
           src={post?.image}
           {...getOverrideProps(
             overrides,
-            "Isolated closeup shot of a gray cat looking into the camera582167"
+            "Isolated closeup shot of a gray cat looking into the camera605289"
           )}
         ></Image>
         <Image
@@ -310,7 +328,7 @@ export default function Profilepage1(props) {
           src={post?.image}
           {...getOverrideProps(
             overrides,
-            "Isolated closeup shot of a gray cat looking into the camera582168"
+            "Isolated closeup shot of a gray cat looking into the camera605290"
           )}
         ></Image>
         <Image
@@ -328,7 +346,7 @@ export default function Profilepage1(props) {
           src={post?.image}
           {...getOverrideProps(
             overrides,
-            "Isolated closeup shot of a gray cat looking into the camera582169"
+            "Isolated closeup shot of a gray cat looking into the camera605291"
           )}
         ></Image>
         <Image
@@ -346,7 +364,7 @@ export default function Profilepage1(props) {
           src={post?.image}
           {...getOverrideProps(
             overrides,
-            "Isolated closeup shot of a gray cat looking into the camera582170"
+            "Isolated closeup shot of a gray cat looking into the camera605292"
           )}
         ></Image>
         <Image
@@ -364,7 +382,7 @@ export default function Profilepage1(props) {
           src={post?.image}
           {...getOverrideProps(
             overrides,
-            "Isolated closeup shot of a gray cat looking into the camera582171"
+            "Isolated closeup shot of a gray cat looking into the camera605293"
           )}
         ></Image>
         <Image
@@ -382,7 +400,7 @@ export default function Profilepage1(props) {
           src={post?.image}
           {...getOverrideProps(
             overrides,
-            "Isolated closeup shot of a gray cat looking into the camera582172"
+            "Isolated closeup shot of a gray cat looking into the camera605294"
           )}
         ></Image>
         <View
@@ -411,7 +429,7 @@ export default function Profilepage1(props) {
             borderRadius="50px"
             padding="0px 0px 0px 0px"
             backgroundColor="rgba(217,217,217,1)"
-            {...getOverrideProps(overrides, "Rectangle 31582174")}
+            {...getOverrideProps(overrides, "Rectangle 31605296")}
           ></View>
           <Text
             fontFamily="Roboto"
@@ -463,7 +481,7 @@ export default function Profilepage1(props) {
             borderRadius="50px"
             padding="0px 0px 0px 0px"
             backgroundColor="rgba(217,217,217,1)"
-            {...getOverrideProps(overrides, "Rectangle 31582177")}
+            {...getOverrideProps(overrides, "Rectangle 31605299")}
           ></View>
           <Text
             fontFamily="Roboto"
@@ -515,7 +533,7 @@ export default function Profilepage1(props) {
             borderRadius="50px"
             padding="0px 0px 0px 0px"
             backgroundColor="rgba(217,217,217,1)"
-            {...getOverrideProps(overrides, "Rectangle 31582180")}
+            {...getOverrideProps(overrides, "Rectangle 31605302")}
           ></View>
           <Text
             fontFamily="Roboto"
