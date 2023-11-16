@@ -13,13 +13,6 @@ function App({ signOut }) {
   </div> 
   );
 
-  return (
-    <div className="App">
-      <Tuktafeedfix />
-      <Button onClick={signOut}>Sign Out</Button>
-    </div> 
-    ); 
-
 
 
 }
