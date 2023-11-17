@@ -40,6 +40,7 @@ export default function LoginScreen(props) {
         opacity="0.25"
         {...getOverrideProps(overrides, "Rectangle 6")}
       ></View>
+      <Text {...getOverrideProps(overrides, "HI TUKTA")}></Text>
       <Text
         fontFamily="Roboto"
         fontSize="16px"
