@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { FeedpageCollection, NewfeedCollection, PostCollection, ProfileCollection } from "./ui-components";
+import { FeedpageCollection, ModelcatCollection, NewfeedCollection, PostCollection, ProfileCollection } from "./ui-components";
 import { withAuthenticator, Button } from '@aws-amplify/ui-react';
 import { Auth } from 'aws-amplify';
 import React, { useState, useEffect } from "react";
@@ -8,7 +8,7 @@ import React, { useState, useEffect } from "react";
 function App({ signOut }) {
 return (
 <div className="App">
-<ProfileCollection />  
+<ModelcatCollection />  
 <Button onClick={signOut}>Sign Out</Button>
 </div> 
 );
