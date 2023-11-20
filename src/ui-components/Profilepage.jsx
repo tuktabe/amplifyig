@@ -247,20 +247,6 @@ export default function Profilepage(props) {
           backgroundImage="linear-gradient(-90deg, rgba(124,81,249,0.7188), rgba(217,217,217,0))"
           {...getOverrideProps(overrides, "Rectangle 29")}
         ></View>
-        <Image
-          width="236px"
-          height="105px"
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          position="absolute"
-          top="0px"
-          left="70px"
-          padding="0px 0px 0px 0px"
-          objectFit="cover"
-          {...getOverrideProps(overrides, "Logo 1")}
-        ></Image>
         <View
           padding="0px 0px 0px 0px"
           width="360px"

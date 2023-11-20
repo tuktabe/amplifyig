@@ -4,13 +4,14 @@
  * Any changes to this file will be overwritten when running amplify pull. *
  **************************************************************************/
 
+export { default as Datingpage } from "./Datingpage";
 export { default as Feedpage } from "./Feedpage";
-export { default as Imgbg } from "./Imgbg";
-export { default as LoginScreen } from "./LoginScreen";
-export { default as Loginbg } from "./Loginbg";
-export { default as Loginimg } from "./Loginimg";
+export { default as Modelcat } from "./Modelcat";
+export { default as ModelcatCollection } from "./ModelcatCollection";
 export { default as Newfeed } from "./Newfeed";
 export { default as NewfeedCollection } from "./NewfeedCollection";
+export { default as PageCollection } from "./PageCollection";
+export { default as Painful } from "./Painful";
 export { default as PhotoPage } from "./PhotoPage";
 export { default as PostCollection } from "./PostCollection";
 export { default as ProfileCollection } from "./ProfileCollection";

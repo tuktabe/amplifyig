@@ -852,7 +852,7 @@ export default function Uploadpage(props) {
                 viewBox={{
                   minX: 0,
                   minY: 0,
-                  width: 10.4501953125,
+                  width: 10.449951171875,
                   height: 9.762451171875,
                 }}
                 paths={[

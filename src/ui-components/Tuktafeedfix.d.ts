@@ -40,10 +40,6 @@ export declare type TuktafeedfixOverridesProps = {
 } & EscapeHatchProps;
 export declare type TuktafeedfixProps = React.PropsWithChildren<Partial<ViewProps> & {
     post?: any;
-    user?: any;
-    user2?: any;
-    user5?: any;
-    user4?: any;
 } & {
     overrides?: TuktafeedfixOverridesProps | undefined | null;
 }>;

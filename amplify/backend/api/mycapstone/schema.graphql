@@ -1,9 +1,3 @@
-type LoginPage @model @auth(rules: [{allow: public}]) {
-  id: ID!
-  title: String!
-  image: String
-}
-
 type Post @model @auth(rules: [{allow: public}]) {
   id: ID!
   tiltle: String!

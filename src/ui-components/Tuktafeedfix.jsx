@@ -9,7 +9,7 @@ import * as React from "react";
 import { getOverrideProps } from "./utils";
 import { Icon, Image, Text, View } from "@aws-amplify/ui-react";
 export default function Tuktafeedfix(props) {
-  const { post, user, user2, user5, user4, overrides, ...rest } = props;
+  const { post, overrides, ...rest } = props;
   return (
     <View
       width="375px"
@@ -196,7 +196,6 @@ export default function Tuktafeedfix(props) {
         left="112px"
         padding="0px 0px 0px 0px"
         objectFit="cover"
-        src={user?.image}
         {...getOverrideProps(
           overrides,
           "Isolated closeup shot of a gray cat looking into the camera608609"
@@ -214,7 +213,6 @@ export default function Tuktafeedfix(props) {
         left="200px"
         padding="0px 0px 0px 0px"
         objectFit="cover"
-        src={user5?.image}
         {...getOverrideProps(
           overrides,
           "Isolated closeup shot of a gray cat looking into the camera608608"
@@ -232,7 +230,6 @@ export default function Tuktafeedfix(props) {
         left="286px"
         padding="0px 0px 0px 0px"
         objectFit="cover"
-        src={user4?.image}
         {...getOverrideProps(
           overrides,
           "Isolated closeup shot of a gray cat looking into the camera608610"

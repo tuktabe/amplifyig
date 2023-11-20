@@ -14,6 +14,9 @@
     "categories": {
       "auth": {
         "mycapstone": {}
+      },
+      "storage": {
+        "s3mycapstonestoragef4ea27cd": {}
       }
     }
   }

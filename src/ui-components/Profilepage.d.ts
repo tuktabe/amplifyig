@@ -32,7 +32,6 @@ export declare type ProfilepageOverridesProps = {
     Vector5761110?: PrimitiveOverrideProps<IconProps>;
     "Rectangle 28"?: PrimitiveOverrideProps<ViewProps>;
     "Rectangle 29"?: PrimitiveOverrideProps<ViewProps>;
-    "Logo 1"?: PrimitiveOverrideProps<ImageProps>;
     "Group 17"?: PrimitiveOverrideProps<ViewProps>;
     "Rectangle 30"?: PrimitiveOverrideProps<ViewProps>;
     "Queen Selena"?: PrimitiveOverrideProps<TextProps>;
