@@ -8,7 +8,6 @@ import Main from './Main';
 function App({ signOut }) {
 return (
 <div className="App">
-
 <ModelcatCollection />  
 <Button onClick={signOut}>Sign Out</Button>
 </div> 
