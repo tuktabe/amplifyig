@@ -7,13 +7,13 @@
 /* eslint-disable */
 import * as React from "react";
 import { listPosts } from "../graphql/queries";
-import Modelcat from "./Modelcat";
+import Backhurt from "./Backhurt";
 import { getOverrideProps } from "./utils";
 import { Collection, Pagination, Placeholder } from "@aws-amplify/ui-react";
 import { API } from "aws-amplify";
 const nextToken = {};
 const apiCache = {};
-export default function ModelcatCollection(props) {
+export default function MainCollection(props) {
   const { items: itemsProp, overrideItems, overrides, ...rest } = props;
   const [pageIndex, setPageIndex] = React.useState(1);
   const [hasMorePages, setHasMorePages] = React.useState(true);
@@ -85,7 +85,7 @@ export default function ModelcatCollection(props) {
         itemsPerPage={pageSize}
         isPaginated={!isApiPagination && isPaginated}
         items={itemsProp || (loading ? new Array(pageSize).fill({}) : items)}
-        {...getOverrideProps(overrides, "ModelcatCollection")}
+        {...getOverrideProps(overrides, "MainCollection")}
         {...rest}
       >
         {(item, index) => {
@@ -93,11 +93,10 @@ export default function ModelcatCollection(props) {
             return <Placeholder key={index} size="large" />;
           }
           return (
-            <Modelcat
-              post={item}
+            <Backhurt
               key={item.id}
               {...(overrideItems && overrideItems({ item, index }))}
-            ></Modelcat>
+            ></Backhurt>
           );
         }}
       </Collection>
