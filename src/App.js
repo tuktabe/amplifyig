@@ -5,6 +5,7 @@ import { withAuthenticator, Button } from '@aws-amplify/ui-react';
 import { Auth } from 'aws-amplify';
 import Main from './Main';
 
+
 function App({ signOut }) {
 return (
 <div className="App">
@@ -13,9 +14,6 @@ return (
 </div> 
 );
 }
-
-
-
 
 export default withAuthenticator(App)
 
