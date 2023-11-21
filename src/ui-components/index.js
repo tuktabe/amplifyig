@@ -5,15 +5,13 @@
  **************************************************************************/
 
 export { default as Backhurt } from "./Backhurt";
-export { default as Datingpage } from "./Datingpage";
+export { default as BackhurtCollection } from "./BackhurtCollection";
 export { default as Feedpage } from "./Feedpage";
 export { default as Ionlogooctocat } from "./Ionlogooctocat";
-export { default as MainCollection } from "./MainCollection";
 export { default as Modelcat } from "./Modelcat";
 export { default as ModelcatCollection } from "./ModelcatCollection";
 export { default as Newfeed } from "./Newfeed";
 export { default as NewfeedCollection } from "./NewfeedCollection";
-export { default as PageCollection } from "./PageCollection";
 export { default as Painful } from "./Painful";
 export { default as PhotoPage } from "./PhotoPage";
 export { default as PostCollection } from "./PostCollection";
@@ -24,7 +22,6 @@ export { default as Profilepage1 } from "./Profilepage1";
 export { default as Showcat } from "./Showcat";
 export { default as Signin } from "./Signin";
 export { default as Suffering } from "./Suffering";
-export { default as Superpainful } from "./Superpainful";
 export { default as Tuktafeedfix } from "./Tuktafeedfix";
 export { default as Uploadpage } from "./Uploadpage";
 export { default as Verypainful } from "./Verypainful";
