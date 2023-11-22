@@ -76,6 +76,10 @@ export default function FeedprofileCollection(props) {
   React.useEffect(() => {
     setMaxViewed(Math.max(maxViewed, pageIndex));
   }, [pageIndex, maxViewed, setMaxViewed]);
+
+  document.body.style.background = 'none';
+  document.body.style.backgroundColor = "#46a5db";
+
   return (
     <div>
       <Collection

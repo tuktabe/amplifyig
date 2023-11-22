@@ -3,7 +3,8 @@ import { BrowserRouter as Router, HashRouter, Route, Switch, Routes } from "reac
 import { Backhurt, BackhurtCollection, FeedpageCollection, ModelcatCollection, NewfeedCollection, PostCollection, ProfileCollection, Profilefix, ProfileScreen, ProfileScreenCollection, Feedprofile, FeedprofileCollection } from "./ui-components";
 
 export default function Root() {
-
+  document.body.style.background = 'none';
+  document.body.style.backgroundColor = "beige";
 
   return (
     <Router>
@@ -16,8 +17,11 @@ export default function Root() {
         
           
         </Switch>
-      </div>
+      </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
     </Router>
   );
 }
 
+
+//document.body.style.background = 'none';
+//document.body.style.backgroundColor = "beige";
