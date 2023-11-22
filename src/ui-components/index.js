@@ -7,7 +7,6 @@
 export { default as Backhurt } from "./Backhurt";
 export { default as BackhurtCollection } from "./BackhurtCollection";
 export { default as Feedpage } from "./Feedpage";
-export { default as Ionlogooctocat } from "./Ionlogooctocat";
 export { default as Modelcat } from "./Modelcat";
 export { default as ModelcatCollection } from "./ModelcatCollection";
 export { default as Newfeed } from "./Newfeed";
@@ -16,6 +15,8 @@ export { default as Painful } from "./Painful";
 export { default as PhotoPage } from "./PhotoPage";
 export { default as PostCollection } from "./PostCollection";
 export { default as ProfileCollection } from "./ProfileCollection";
+export { default as ProfileScreen } from "./ProfileScreen";
+export { default as ProfileScreenCollection } from "./ProfileScreenCollection";
 export { default as Profilefix } from "./Profilefix";
 export { default as Profilepage } from "./Profilepage";
 export { default as Profilepage1 } from "./Profilepage1";

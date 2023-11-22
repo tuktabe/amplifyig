@@ -52,7 +52,7 @@ export declare type ProfilefixOverridesProps = {
     Message?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type ProfilefixProps = React.PropsWithChildren<Partial<ViewProps> & {
-    post?: any;
+    user?: any;
 } & {
     overrides?: ProfilefixOverridesProps | undefined | null;
 }>;

@@ -6,10 +6,17 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "./utils";
+import { getOverrideProps, useNavigateAction } from "./utils";
 import { Icon, Image, Text, View } from "@aws-amplify/ui-react";
 export default function Profilefix(props) {
-  const { post, overrides, ...rest } = props;
+  const { user, overrides, ...rest } = props;
+  const isolatedcloseupshotofagraycatlookingintothecameraSixZeroFiveTwoSevenSixOnClick =
+    useNavigateAction({ target: "_blank", type: "url", url: "" });
+  const vectorSixZeroFiveTwoSevenSevenOnClick = useNavigateAction({
+    target: "_blank",
+    type: "url",
+    url: "",
+  });
   return (
     <View
       width="375px"
@@ -66,7 +73,10 @@ export default function Profilefix(props) {
           left="310px"
           padding="0px 0px 0px 0px"
           objectFit="cover"
-          src={post?.image}
+          src={user?.image}
+          onClick={() => {
+            isolatedcloseupshotofagraycatlookingintothecameraSixZeroFiveTwoSevenSixOnClick();
+          }}
           {...getOverrideProps(
             overrides,
             "Isolated closeup shot of a gray cat looking into the camera605276"
@@ -92,6 +102,10 @@ export default function Profilefix(props) {
           bottom="1.5%"
           left="4.53%"
           right="84.8%"
+          src={user?.image}
+          onClick={() => {
+            vectorSixZeroFiveTwoSevenSevenOnClick();
+          }}
           {...getOverrideProps(overrides, "Vector605277")}
         ></Icon>
         <View
@@ -235,7 +249,7 @@ export default function Profilefix(props) {
           left="8px"
           padding="0px 0px 0px 0px"
           objectFit="cover"
-          src={post?.image}
+          src={user?.image}
           {...getOverrideProps(
             overrides,
             "Isolated closeup shot of a gray cat looking into the camera605286"
@@ -253,7 +267,7 @@ export default function Profilefix(props) {
           left="115px"
           padding="0px 0px 0px 0px"
           objectFit="cover"
-          src={post?.image}
+          src={user?.image}
           {...getOverrideProps(
             overrides,
             "Isolated closeup shot of a gray cat looking into the camera605304"
@@ -271,7 +285,7 @@ export default function Profilefix(props) {
           left="8px"
           padding="0px 0px 0px 0px"
           objectFit="cover"
-          src={post?.image}
+          src={user?.image}
           {...getOverrideProps(
             overrides,
             "Isolated closeup shot of a gray cat looking into the camera605287"
@@ -289,7 +303,7 @@ export default function Profilefix(props) {
           left="8px"
           padding="0px 0px 0px 0px"
           objectFit="cover"
-          src={post?.image}
+          src={user?.image}
           {...getOverrideProps(
             overrides,
             "Isolated closeup shot of a gray cat looking into the camera605288"
@@ -307,7 +321,7 @@ export default function Profilefix(props) {
           left="130px"
           padding="0px 0px 0px 0px"
           objectFit="cover"
-          src={post?.image}
+          src={user?.image}
           {...getOverrideProps(
             overrides,
             "Isolated closeup shot of a gray cat looking into the camera605289"
@@ -325,7 +339,7 @@ export default function Profilefix(props) {
           left="129px"
           padding="0px 0px 0px 0px"
           objectFit="cover"
-          src={post?.image}
+          src={`${user?.image}${user?.image}`}
           {...getOverrideProps(
             overrides,
             "Isolated closeup shot of a gray cat looking into the camera605290"
@@ -343,7 +357,7 @@ export default function Profilefix(props) {
           left="129px"
           padding="0px 0px 0px 0px"
           objectFit="cover"
-          src={post?.image}
+          src={user?.image}
           {...getOverrideProps(
             overrides,
             "Isolated closeup shot of a gray cat looking into the camera605291"
@@ -361,7 +375,7 @@ export default function Profilefix(props) {
           left="252px"
           padding="0px 0px 0px 0px"
           objectFit="cover"
-          src={post?.image}
+          src={user?.image}
           {...getOverrideProps(
             overrides,
             "Isolated closeup shot of a gray cat looking into the camera605292"
@@ -379,7 +393,7 @@ export default function Profilefix(props) {
           left="253px"
           padding="0px 0px 0px 0px"
           objectFit="cover"
-          src={post?.image}
+          src={user?.image}
           {...getOverrideProps(
             overrides,
             "Isolated closeup shot of a gray cat looking into the camera605293"
@@ -397,7 +411,7 @@ export default function Profilefix(props) {
           left="253px"
           padding="0px 0px 0px 0px"
           objectFit="cover"
-          src={post?.image}
+          src={user?.image}
           {...getOverrideProps(
             overrides,
             "Isolated closeup shot of a gray cat looking into the camera605294"

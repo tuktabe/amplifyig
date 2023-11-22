@@ -1042,7 +1042,7 @@ export default function Backhurt(props) {
         left="21px"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-        children="PURR&#xA;Cat Dating App"
+        children="PURR&#xA;Cat Social Media App"
         {...getOverrideProps(overrides, "Discover")}
       ></Text>
       <View
