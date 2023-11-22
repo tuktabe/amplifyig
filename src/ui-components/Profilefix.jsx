@@ -10,13 +10,27 @@ import { getOverrideProps, useNavigateAction } from "./utils";
 import { Icon, Image, Text, View } from "@aws-amplify/ui-react";
 export default function Profilefix(props) {
   const { user, overrides, ...rest } = props;
+  const rectangleOneSevenOnClick = useNavigateAction({
+    type: "url",
+    url: "BackhurtCollection",
+  });
   const isolatedcloseupshotofagraycatlookingintothecameraSixZeroFiveTwoSevenSixOnClick =
-    useNavigateAction({ target: "_blank", type: "url", url: "" });
+    useNavigateAction({ type: "url", url: "ProfileScreenCollection" });
   const vectorSixZeroFiveTwoSevenSevenOnClick = useNavigateAction({
     target: "_blank",
     type: "url",
-    url: "",
+    url: "BackhurtCollection",
   });
+  const vectorSixZeroFiveTwoSevenNineOnClick = useNavigateAction({
+    type: "url",
+    url: "ProfileScreenCollection",
+  });
+  const isolatedcloseupshotofagraycatlookingintothecameraSixZeroFiveThreeZeroFourOnClick =
+    useNavigateAction({
+      target: "_blank",
+      type: "url",
+      url: "ProfileCollection",
+    });
   return (
     <View
       width="375px"
@@ -59,6 +73,9 @@ export default function Profilefix(props) {
           left="0px"
           padding="0px 0px 0px 0px"
           backgroundImage="linear-gradient(-90deg, rgba(17,111,237,1), rgba(47,128,237,0))"
+          onClick={() => {
+            rectangleOneSevenOnClick();
+          }}
           {...getOverrideProps(overrides, "Rectangle 17")}
         ></View>
         <Image
@@ -142,6 +159,9 @@ export default function Profilefix(props) {
             bottom="12.5%"
             left="12.5%"
             right="12.5%"
+            onClick={() => {
+              vectorSixZeroFiveTwoSevenNineOnClick();
+            }}
             {...getOverrideProps(overrides, "Vector605279")}
           ></Icon>
         </View>
@@ -268,6 +288,9 @@ export default function Profilefix(props) {
           padding="0px 0px 0px 0px"
           objectFit="cover"
           src={user?.image}
+          onClick={() => {
+            isolatedcloseupshotofagraycatlookingintothecameraSixZeroFiveThreeZeroFourOnClick();
+          }}
           {...getOverrideProps(
             overrides,
             "Isolated closeup shot of a gray cat looking into the camera605304"
