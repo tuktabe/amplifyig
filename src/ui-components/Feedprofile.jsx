@@ -13,12 +13,15 @@ import {
 } from "./utils";
 import { Icon, Image, Text, View } from "@aws-amplify/ui-react";
 export default function Feedprofile(props) {
-  const { user, overrides, ...rest } = props;
+  const { user, post, overrides, ...rest } = props;
   const rectangleNineOnClick = useNavigateAction({
     type: "url",
     url: "/ProfileCollection",
   });
   const ovalFourZeroSixOneZeroTwoSevenOnClick = useAuthSignOutAction({
+    global: false,
+  });
+  const pathFourZeroSixOneZeroTwoNineOnClick = useAuthSignOutAction({
     global: false,
   });
   return (
@@ -368,6 +371,9 @@ export default function Feedprofile(props) {
               position="absolute"
               top="0px"
               left="0px"
+              onClick={() => {
+                pathFourZeroSixOneZeroTwoNineOnClick();
+              }}
               {...getOverrideProps(overrides, "Path4061029")}
             ></Icon>
           </View>

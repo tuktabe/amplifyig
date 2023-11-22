@@ -13,7 +13,6 @@ export { default as Modelcat } from "./Modelcat";
 export { default as ModelcatCollection } from "./ModelcatCollection";
 export { default as NameCollection } from "./NameCollection";
 export { default as Newfeed } from "./Newfeed";
-export { default as NewfeedCollection } from "./NewfeedCollection";
 export { default as PhotoPage } from "./PhotoPage";
 export { default as PostCollection } from "./PostCollection";
 export { default as ProfileCollection } from "./ProfileCollection";

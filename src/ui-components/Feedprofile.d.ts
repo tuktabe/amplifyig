@@ -80,6 +80,7 @@ export declare type FeedprofileOverridesProps = {
 } & EscapeHatchProps;
 export declare type FeedprofileProps = React.PropsWithChildren<Partial<ViewProps> & {
     user?: any;
+    post?: any;
 } & {
     overrides?: FeedprofileOverridesProps | undefined | null;
 }>;
