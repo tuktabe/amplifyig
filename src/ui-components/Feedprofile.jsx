@@ -24,6 +24,10 @@ export default function Feedprofile(props) {
   const pathFourZeroSixOneZeroTwoNineOnClick = useAuthSignOutAction({
     global: false,
   });
+  const rectangleFiveOnClick = useNavigateAction({
+    type: "url",
+    url: "/ProfileCollection",
+  });
   return (
     <View
       width="375px"
@@ -1049,6 +1053,9 @@ export default function Feedprofile(props) {
         padding="0px 0px 0px 0px"
         objectFit="cover"
         src={user?.image}
+        onClick={() => {
+          rectangleFiveOnClick();
+        }}
         {...getOverrideProps(overrides, "Rectangle 5")}
       ></Image>
       <Text
