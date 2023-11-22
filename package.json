@@ -10,7 +10,7 @@
     "aws-amplify": "^5.3.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.18.0",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "5.0.1",
     "react-tsparticles": "^2.12.2",
     "tsparticles": "^2.12.0",

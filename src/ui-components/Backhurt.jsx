@@ -22,7 +22,10 @@ export default function Backhurt(props) {
     type: "url",
     url: user?.image,
   });
-  const rectangleNineOnClick = useNavigateAction({ type: "url", url: post });
+  const rectangleNineOnClick = useNavigateAction({
+    type: "url",
+    url: "/ProfileCollection",
+  });
   const ovalThreeSevenZeroOneZeroFiveOneOnClick = useAuthSignOutAction({
     global: false,
   });
