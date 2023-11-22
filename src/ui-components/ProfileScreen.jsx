@@ -19,9 +19,8 @@ export default function ProfileScreen(props) {
   const { user, overrides, ...rest } = props;
   const authAttributes = useAuth().user?.attributes ?? {};
   const vectorThreeEightZeroSixFiveFiveOnClick = useNavigateAction({
-    target: "_blank",
     type: "url",
-    url: "BackhurtCollection",
+    url: "/collection",
   });
   const ovalThreeEightZeroSixSixSixOnClick = useAuthSignOutAction({
     global: false,
@@ -134,7 +133,7 @@ export default function ProfileScreen(props) {
             left="0px"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="Tuna Italia"
+            children={user?.name}
             {...getOverrideProps(overrides, "Tuna Italia")}
           ></Text>
         </Flex>
@@ -780,7 +779,7 @@ export default function ProfileScreen(props) {
         left="165px"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-        children="Tuna"
+        children={user?.name}
         {...getOverrideProps(overrides, "Tuna")}
       ></Text>
       <Text

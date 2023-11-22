@@ -6,41 +6,20 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { useAuth } from "@aws-amplify/ui-react/internal";
 import {
   getOverrideProps,
   useAuthSignOutAction,
   useNavigateAction,
 } from "./utils";
 import { Icon, Image, Text, View } from "@aws-amplify/ui-react";
-export default function Backhurt(props) {
-  const { user, post, photo, overrides, ...rest } = props;
-  const authAttributes = useAuth().user?.attributes ?? {};
-  const vectorThreeSevenZeroOneTwoFiveFiveOnClick = useNavigateAction({
-    type: "url",
-    url: user?.image,
-  });
-  const vectorThreeSevenZeroOneTwoFiveFourOnClick = useNavigateAction({
-    type: "url",
-    url: user?.image,
-  });
+export default function Feedprofile(props) {
+  const { user, overrides, ...rest } = props;
   const rectangleNineOnClick = useNavigateAction({
     type: "url",
     url: "/ProfileCollection",
   });
-  const ovalThreeSevenZeroOneZeroFiveOneOnClick = useAuthSignOutAction({
+  const ovalFourZeroSixOneZeroTwoSevenOnClick = useAuthSignOutAction({
     global: false,
-  });
-  const pathThreeSevenZeroOneZeroFiveThreeOnClick = useAuthSignOutAction({
-    global: false,
-  });
-  const ovalThreeSevenZeroOneZeroFiveFiveOnClick = useNavigateAction({
-    type: "url",
-    url: user,
-  });
-  const pathThreeSevenZeroOneZeroFiveSevenOnClick = useNavigateAction({
-    type: "url",
-    url: user?.image,
   });
   return (
     <View
@@ -55,7 +34,7 @@ export default function Backhurt(props) {
       borderRadius="50px"
       padding="0px 0px 0px 0px"
       backgroundColor="rgba(255,255,255,1)"
-      {...getOverrideProps(overrides, "Backhurt")}
+      {...getOverrideProps(overrides, "Feedprofile")}
       {...rest}
     >
       <View
@@ -130,7 +109,7 @@ export default function Backhurt(props) {
           border="0.2px SOLID rgba(153,163,176,1)"
           padding="0px 0px 0px 0px"
           backgroundColor="rgba(255,255,255,1)"
-          {...getOverrideProps(overrides, "Rectangle3701005")}
+          {...getOverrideProps(overrides, "Rectangle4061012")}
         ></View>
         <View
           width="36px"
@@ -164,7 +143,7 @@ export default function Backhurt(props) {
             position="absolute"
             top="5px"
             left="0px"
-            {...getOverrideProps(overrides, "Shape3701034")}
+            {...getOverrideProps(overrides, "Shape4061014")}
           >
             <Icon
               width="24px"
@@ -178,7 +157,7 @@ export default function Backhurt(props) {
               position="absolute"
               top="0px"
               left="0px"
-              {...getOverrideProps(overrides, "Path3701035")}
+              {...getOverrideProps(overrides, "Path4061015")}
             ></Icon>
             <Icon
               width="19.2px"
@@ -197,7 +176,7 @@ export default function Backhurt(props) {
               position="absolute"
               top="2.47px"
               left="2.4px"
-              {...getOverrideProps(overrides, "Path3701036")}
+              {...getOverrideProps(overrides, "Path4061016")}
             ></Icon>
           </Icon>
           <Icon
@@ -218,7 +197,7 @@ export default function Backhurt(props) {
             position="absolute"
             top="0px"
             left="16px"
-            {...getOverrideProps(overrides, "Oval3701040")}
+            {...getOverrideProps(overrides, "Oval4061020")}
           ></Icon>
         </View>
         <View
@@ -255,10 +234,7 @@ export default function Backhurt(props) {
           bottom="23.29%"
           left="7.73%"
           right="80.27%"
-          onClick={() => {
-            vectorThreeSevenZeroOneTwoFiveFiveOnClick();
-          }}
-          {...getOverrideProps(overrides, "Vector3701255")}
+          {...getOverrideProps(overrides, "Vector4061022")}
         ></Icon>
         <Icon
           width="35px"
@@ -280,10 +256,7 @@ export default function Backhurt(props) {
           bottom="34.25%"
           left="9.07%"
           right="81.6%"
-          onClick={() => {
-            vectorThreeSevenZeroOneTwoFiveFourOnClick();
-          }}
-          {...getOverrideProps(overrides, "Vector3701254")}
+          {...getOverrideProps(overrides, "Vector4061023")}
         ></Icon>
         <Image
           width="67px"
@@ -298,7 +271,7 @@ export default function Backhurt(props) {
           borderRadius="50px"
           padding="0px 0px 0px 0px"
           objectFit="cover"
-          src={post?.image}
+          src={user?.image}
           onClick={() => {
             rectangleNineOnClick();
           }}
@@ -356,9 +329,9 @@ export default function Backhurt(props) {
             top="0px"
             left="0px"
             onClick={() => {
-              ovalThreeSevenZeroOneZeroFiveOneOnClick();
+              ovalFourZeroSixOneZeroTwoSevenOnClick();
             }}
-            {...getOverrideProps(overrides, "Oval3701051")}
+            {...getOverrideProps(overrides, "Oval4061027")}
           ></Icon>
           <View
             padding="0px 0px 0px 0px"
@@ -380,7 +353,7 @@ export default function Backhurt(props) {
                 minX: 0,
                 minY: 0,
                 width: 18.947265625,
-                height: 18.947372436523438,
+                height: 18.9473876953125,
               }}
               paths={[
                 {
@@ -395,10 +368,7 @@ export default function Backhurt(props) {
               position="absolute"
               top="0px"
               left="0px"
-              onClick={() => {
-                pathThreeSevenZeroOneZeroFiveThreeOnClick();
-              }}
-              {...getOverrideProps(overrides, "Path3701053")}
+              {...getOverrideProps(overrides, "Path4061029")}
             ></Icon>
           </View>
         </View>
@@ -439,10 +409,7 @@ export default function Backhurt(props) {
             position="absolute"
             top="0px"
             left="0px"
-            onClick={() => {
-              ovalThreeSevenZeroOneZeroFiveFiveOnClick();
-            }}
-            {...getOverrideProps(overrides, "Oval3701055")}
+            {...getOverrideProps(overrides, "Oval4061031")}
           ></Icon>
           <View
             padding="0px 0px 0px 0px"
@@ -464,7 +431,7 @@ export default function Backhurt(props) {
                 minX: 0,
                 minY: 0,
                 width: 21.78955078125,
-                height: 19.894737243652344,
+                height: 19.89471435546875,
               }}
               paths={[
                 {
@@ -479,10 +446,7 @@ export default function Backhurt(props) {
               position="absolute"
               top="0px"
               left="0px"
-              onClick={() => {
-                pathThreeSevenZeroOneZeroFiveSevenOnClick();
-              }}
-              {...getOverrideProps(overrides, "Path3701057")}
+              {...getOverrideProps(overrides, "Path4061033")}
             ></Icon>
           </View>
         </View>
@@ -513,7 +477,7 @@ export default function Backhurt(props) {
           position="absolute"
           top="0px"
           left="0px"
-          {...getOverrideProps(overrides, "Group 13701059")}
+          {...getOverrideProps(overrides, "Group 14061035")}
         >
           <Image
             width="100%"
@@ -557,7 +521,7 @@ export default function Backhurt(props) {
             position="absolute"
             top="442px"
             left="0px"
-            {...getOverrideProps(overrides, "Info3701062")}
+            {...getOverrideProps(overrides, "Info4061038")}
           >
             <View
               width="337px"
@@ -573,7 +537,7 @@ export default function Backhurt(props) {
               borderRadius="13px"
               padding="0px 0px 0px 0px"
               backgroundColor="rgba(255,255,255,1)"
-              {...getOverrideProps(overrides, "Rectangle3701063")}
+              {...getOverrideProps(overrides, "Rectangle4061039")}
             ></View>
             <View
               width="22px"
@@ -587,7 +551,7 @@ export default function Backhurt(props) {
               top="39px"
               left="106px"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "age3701064")}
+              {...getOverrideProps(overrides, "age4061040")}
             >
               <View
                 width="22px"
@@ -604,14 +568,14 @@ export default function Backhurt(props) {
                 borderRadius="7.5px"
                 padding="0px 0px 0px 0px"
                 backgroundImage="linear-gradient(0deg, rgba(255,103,155,1), rgba(255,137,96,1))"
-                {...getOverrideProps(overrides, "Rectangle3701065")}
+                {...getOverrideProps(overrides, "Rectangle4061041")}
               ></View>
               <Text
                 fontFamily="Nunito"
                 fontSize="9px"
                 fontWeight="400"
                 color="rgba(255,254,254,1)"
-                lineHeight="11.29833984375px"
+                lineHeight="12.276000022888184px"
                 textAlign="left"
                 display="block"
                 direction="column"
@@ -622,13 +586,13 @@ export default function Backhurt(props) {
                 gap="unset"
                 alignItems="unset"
                 position="absolute"
-                top="calc(50% - 11px - -5px)"
+                top="calc(50% - 12px - -6px)"
                 left="45.45%"
                 right="9.09%"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
                 children="21"
-                {...getOverrideProps(overrides, "213701066")}
+                {...getOverrideProps(overrides, "214061042")}
               ></Text>
               <View
                 padding="0px 0px 0px 0px"
@@ -641,7 +605,7 @@ export default function Backhurt(props) {
                 position="absolute"
                 top="4px"
                 left="4px"
-                {...getOverrideProps(overrides, "female3701067")}
+                {...getOverrideProps(overrides, "female4061043")}
               >
                 <Icon
                   width="4px"
@@ -674,7 +638,7 @@ export default function Backhurt(props) {
                   bottom="0%"
                   left="0%"
                   right="0%"
-                  {...getOverrideProps(overrides, "Shape3701068")}
+                  {...getOverrideProps(overrides, "Shape4061044")}
                 >
                   <Icon
                     width="4px"
@@ -695,7 +659,7 @@ export default function Backhurt(props) {
                     bottom="0%"
                     left="0%"
                     right="0%"
-                    {...getOverrideProps(overrides, "Path3701069")}
+                    {...getOverrideProps(overrides, "Path4061045")}
                   ></Icon>
                   <Icon
                     width="3.11px"
@@ -704,7 +668,7 @@ export default function Backhurt(props) {
                       minX: 0,
                       minY: 0,
                       width: 4.13330078125,
-                      height: 4.196136474609375,
+                      height: 4.19610595703125,
                     }}
                     paths={[]}
                     display="block"
@@ -716,7 +680,7 @@ export default function Backhurt(props) {
                     bottom="38.46%"
                     left="11.11%"
                     right="11.11%"
-                    {...getOverrideProps(overrides, "Path3701070")}
+                    {...getOverrideProps(overrides, "Path4061046")}
                   ></Icon>
                 </Icon>
               </View>
@@ -742,7 +706,7 @@ export default function Backhurt(props) {
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
               children="5 miles away"
-              {...getOverrideProps(overrides, "City3701071")}
+              {...getOverrideProps(overrides, "City4061047")}
             ></Text>
             <Text
               fontFamily="Nunito"
@@ -765,7 +729,7 @@ export default function Backhurt(props) {
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
               children="Juli"
-              {...getOverrideProps(overrides, "Name3701072")}
+              {...getOverrideProps(overrides, "Name4061048")}
             ></Text>
           </View>
         </View>
@@ -796,7 +760,7 @@ export default function Backhurt(props) {
           position="absolute"
           top="0px"
           left="0px"
-          {...getOverrideProps(overrides, "Group 13701074")}
+          {...getOverrideProps(overrides, "Group 14061050")}
         >
           <Image
             width="334px"
@@ -826,7 +790,7 @@ export default function Backhurt(props) {
             position="absolute"
             top="442px"
             left="0px"
-            {...getOverrideProps(overrides, "Info3701076")}
+            {...getOverrideProps(overrides, "Info4061052")}
           >
             <View
               width="337px"
@@ -842,7 +806,7 @@ export default function Backhurt(props) {
               borderRadius="13px"
               padding="0px 0px 0px 0px"
               backgroundColor="rgba(255,255,255,1)"
-              {...getOverrideProps(overrides, "Rectangle3701077")}
+              {...getOverrideProps(overrides, "Rectangle4061053")}
             ></View>
             <View
               width="22px"
@@ -856,7 +820,7 @@ export default function Backhurt(props) {
               top="39px"
               left="109px"
               padding="0px 0px 0px 0px"
-              {...getOverrideProps(overrides, "age3701078")}
+              {...getOverrideProps(overrides, "age4061054")}
             >
               <View
                 width="22px"
@@ -873,14 +837,14 @@ export default function Backhurt(props) {
                 borderRadius="7.5px"
                 padding="0px 0px 0px 0px"
                 backgroundImage="linear-gradient(0deg, rgba(255,103,155,1), rgba(255,137,96,1))"
-                {...getOverrideProps(overrides, "Rectangle3701079")}
+                {...getOverrideProps(overrides, "Rectangle4061055")}
               ></View>
               <Text
                 fontFamily="Nunito"
                 fontSize="9px"
                 fontWeight="400"
                 color="rgba(255,254,254,1)"
-                lineHeight="11.29833984375px"
+                lineHeight="12.276000022888184px"
                 textAlign="left"
                 display="block"
                 direction="column"
@@ -891,13 +855,13 @@ export default function Backhurt(props) {
                 gap="unset"
                 alignItems="unset"
                 position="absolute"
-                top="calc(50% - 11px - -5px)"
+                top="calc(50% - 12px - -6px)"
                 left="45.45%"
                 right="9.09%"
                 padding="0px 0px 0px 0px"
                 whiteSpace="pre-wrap"
                 children="21"
-                {...getOverrideProps(overrides, "213701080")}
+                {...getOverrideProps(overrides, "214061056")}
               ></Text>
               <View
                 padding="0px 0px 0px 0px"
@@ -910,7 +874,7 @@ export default function Backhurt(props) {
                 position="absolute"
                 top="4px"
                 left="4px"
-                {...getOverrideProps(overrides, "female3701081")}
+                {...getOverrideProps(overrides, "female4061057")}
               >
                 <Icon
                   width="4px"
@@ -943,7 +907,7 @@ export default function Backhurt(props) {
                   bottom="0%"
                   left="0%"
                   right="0%"
-                  {...getOverrideProps(overrides, "Shape3701082")}
+                  {...getOverrideProps(overrides, "Shape4061058")}
                 >
                   <Icon
                     width="4px"
@@ -964,7 +928,7 @@ export default function Backhurt(props) {
                     bottom="0%"
                     left="0%"
                     right="0%"
-                    {...getOverrideProps(overrides, "Path3701083")}
+                    {...getOverrideProps(overrides, "Path4061059")}
                   ></Icon>
                   <Icon
                     width="3.11px"
@@ -973,7 +937,7 @@ export default function Backhurt(props) {
                       minX: 0,
                       minY: 0,
                       width: 3.857421875,
-                      height: 3.940948486328125,
+                      height: 3.94091796875,
                     }}
                     paths={[]}
                     display="block"
@@ -985,7 +949,7 @@ export default function Backhurt(props) {
                     bottom="38.46%"
                     left="11.11%"
                     right="11.11%"
-                    {...getOverrideProps(overrides, "Path3701084")}
+                    {...getOverrideProps(overrides, "Path4061060")}
                   ></Icon>
                 </Icon>
               </View>
@@ -1011,7 +975,7 @@ export default function Backhurt(props) {
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
               children="10 miles away"
-              {...getOverrideProps(overrides, "City3701085")}
+              {...getOverrideProps(overrides, "City4061061")}
             ></Text>
             <Text
               fontFamily="Nunito"
@@ -1034,7 +998,7 @@ export default function Backhurt(props) {
               padding="0px 0px 0px 0px"
               whiteSpace="pre-wrap"
               children="Rohini"
-              {...getOverrideProps(overrides, "Name3701086")}
+              {...getOverrideProps(overrides, "Name4061062")}
             ></Text>
           </View>
         </View>
@@ -1124,7 +1088,7 @@ export default function Backhurt(props) {
         left="55px"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-        children=""
+        children="Gender: Male"
         {...getOverrideProps(overrides, "Gender: Male")}
       ></Text>
       <Text
@@ -1147,7 +1111,7 @@ export default function Backhurt(props) {
         left="55px"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-        children={authAttributes["family_name"]}
+        children="Age: 2 Years Old"
         {...getOverrideProps(overrides, "Age: 2 Years Old")}
       ></Text>
     </View>

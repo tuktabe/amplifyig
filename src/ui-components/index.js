@@ -7,8 +7,11 @@
 export { default as Backhurt } from "./Backhurt";
 export { default as BackhurtCollection } from "./BackhurtCollection";
 export { default as Feedpage } from "./Feedpage";
+export { default as Feedprofile } from "./Feedprofile";
+export { default as FeedprofileCollection } from "./FeedprofileCollection";
 export { default as Modelcat } from "./Modelcat";
 export { default as ModelcatCollection } from "./ModelcatCollection";
+export { default as NameCollection } from "./NameCollection";
 export { default as Newfeed } from "./Newfeed";
 export { default as NewfeedCollection } from "./NewfeedCollection";
 export { default as PhotoPage } from "./PhotoPage";

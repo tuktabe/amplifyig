@@ -21,6 +21,7 @@ export declare type BackhurtOverridesProps = {
     "213701066"?: PrimitiveOverrideProps<TextProps>;
     "213701080"?: PrimitiveOverrideProps<TextProps>;
     Backhurt?: PrimitiveOverrideProps<ViewProps>;
+    "Rectangle 32"?: PrimitiveOverrideProps<ViewProps>;
     "Rectangle 10"?: PrimitiveOverrideProps<ViewProps>;
     Background?: PrimitiveOverrideProps<ViewProps>;
     Menu?: PrimitiveOverrideProps<ViewProps>;
@@ -73,14 +74,14 @@ export declare type BackhurtOverridesProps = {
     Discover?: PrimitiveOverrideProps<TextProps>;
     "Status Bar Dark"?: PrimitiveOverrideProps<ViewProps>;
     "Rectangle 5"?: PrimitiveOverrideProps<ImageProps>;
-    "Rectangle 7"?: PrimitiveOverrideProps<ViewProps>;
     Roma?: PrimitiveOverrideProps<TextProps>;
-    "Male,"?: PrimitiveOverrideProps<TextProps>;
+    "Gender: Male"?: PrimitiveOverrideProps<TextProps>;
     "Age: 2 Years Old"?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type BackhurtProps = React.PropsWithChildren<Partial<ViewProps> & {
     user?: any;
     post?: any;
+    photo?: String;
 } & {
     overrides?: BackhurtOverridesProps | undefined | null;
 }>;

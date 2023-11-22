@@ -10,27 +10,16 @@ import { getOverrideProps, useNavigateAction } from "./utils";
 import { Icon, Image, Text, View } from "@aws-amplify/ui-react";
 export default function Profilefix(props) {
   const { user, overrides, ...rest } = props;
-  const rectangleOneSevenOnClick = useNavigateAction({
-    type: "url",
-    url: "BackhurtCollection",
-  });
-  const isolatedcloseupshotofagraycatlookingintothecameraSixZeroFiveTwoSevenSixOnClick =
+  const isolatedcloseupshotofagraycatlookingintothecameraThreeNineOneSixSevenThreeOnClick =
     useNavigateAction({ type: "url", url: "ProfileScreenCollection" });
-  const vectorSixZeroFiveTwoSevenSevenOnClick = useNavigateAction({
-    target: "_blank",
+  const vectorThreeNineOneSixSevenFourOnClick = useNavigateAction({
     type: "url",
-    url: "BackhurtCollection",
+    url: "/collection",
   });
-  const vectorSixZeroFiveTwoSevenNineOnClick = useNavigateAction({
+  const vectorThreeNineOneSixSevenSixOnClick = useNavigateAction({
     type: "url",
     url: "ProfileScreenCollection",
   });
-  const isolatedcloseupshotofagraycatlookingintothecameraSixZeroFiveThreeZeroFourOnClick =
-    useNavigateAction({
-      target: "_blank",
-      type: "url",
-      url: "ProfileCollection",
-    });
   return (
     <View
       width="375px"
@@ -73,9 +62,6 @@ export default function Profilefix(props) {
           left="0px"
           padding="0px 0px 0px 0px"
           backgroundImage="linear-gradient(-90deg, rgba(17,111,237,1), rgba(47,128,237,0))"
-          onClick={() => {
-            rectangleOneSevenOnClick();
-          }}
           {...getOverrideProps(overrides, "Rectangle 17")}
         ></View>
         <Image
@@ -92,11 +78,11 @@ export default function Profilefix(props) {
           objectFit="cover"
           src={user?.image}
           onClick={() => {
-            isolatedcloseupshotofagraycatlookingintothecameraSixZeroFiveTwoSevenSixOnClick();
+            isolatedcloseupshotofagraycatlookingintothecameraThreeNineOneSixSevenThreeOnClick();
           }}
           {...getOverrideProps(
             overrides,
-            "Isolated closeup shot of a gray cat looking into the camera605276"
+            "Isolated closeup shot of a gray cat looking into the camera391673"
           )}
         ></Image>
         <Icon
@@ -119,11 +105,10 @@ export default function Profilefix(props) {
           bottom="1.5%"
           left="4.53%"
           right="84.8%"
-          src={user?.image}
           onClick={() => {
-            vectorSixZeroFiveTwoSevenSevenOnClick();
+            vectorThreeNineOneSixSevenFourOnClick();
           }}
-          {...getOverrideProps(overrides, "Vector605277")}
+          {...getOverrideProps(overrides, "Vector391674")}
         ></Icon>
         <View
           width="46px"
@@ -160,9 +145,9 @@ export default function Profilefix(props) {
             left="12.5%"
             right="12.5%"
             onClick={() => {
-              vectorSixZeroFiveTwoSevenNineOnClick();
+              vectorThreeNineOneSixSevenSixOnClick();
             }}
-            {...getOverrideProps(overrides, "Vector605279")}
+            {...getOverrideProps(overrides, "Vector391676")}
           ></Icon>
         </View>
         <View
@@ -240,7 +225,7 @@ export default function Profilefix(props) {
             left="141px"
             padding="0px 0px 0px 0px"
             whiteSpace="pre-wrap"
-            children="Queen Selena"
+            children={user?.name}
             {...getOverrideProps(overrides, "Queen Selena")}
           ></Text>
           <View
@@ -272,7 +257,7 @@ export default function Profilefix(props) {
           src={user?.image}
           {...getOverrideProps(
             overrides,
-            "Isolated closeup shot of a gray cat looking into the camera605286"
+            "Isolated closeup shot of a gray cat looking into the camera391683"
           )}
         ></Image>
         <Image
@@ -288,12 +273,9 @@ export default function Profilefix(props) {
           padding="0px 0px 0px 0px"
           objectFit="cover"
           src={user?.image}
-          onClick={() => {
-            isolatedcloseupshotofagraycatlookingintothecameraSixZeroFiveThreeZeroFourOnClick();
-          }}
           {...getOverrideProps(
             overrides,
-            "Isolated closeup shot of a gray cat looking into the camera605304"
+            "Isolated closeup shot of a gray cat looking into the camera391684"
           )}
         ></Image>
         <Image
@@ -311,7 +293,7 @@ export default function Profilefix(props) {
           src={user?.image}
           {...getOverrideProps(
             overrides,
-            "Isolated closeup shot of a gray cat looking into the camera605287"
+            "Isolated closeup shot of a gray cat looking into the camera391685"
           )}
         ></Image>
         <Image
@@ -329,7 +311,7 @@ export default function Profilefix(props) {
           src={user?.image}
           {...getOverrideProps(
             overrides,
-            "Isolated closeup shot of a gray cat looking into the camera605288"
+            "Isolated closeup shot of a gray cat looking into the camera391686"
           )}
         ></Image>
         <Image
@@ -347,7 +329,7 @@ export default function Profilefix(props) {
           src={user?.image}
           {...getOverrideProps(
             overrides,
-            "Isolated closeup shot of a gray cat looking into the camera605289"
+            "Isolated closeup shot of a gray cat looking into the camera391687"
           )}
         ></Image>
         <Image
@@ -362,10 +344,10 @@ export default function Profilefix(props) {
           left="129px"
           padding="0px 0px 0px 0px"
           objectFit="cover"
-          src={`${user?.image}${user?.image}`}
+          src={user?.image}
           {...getOverrideProps(
             overrides,
-            "Isolated closeup shot of a gray cat looking into the camera605290"
+            "Isolated closeup shot of a gray cat looking into the camera391688"
           )}
         ></Image>
         <Image
@@ -383,7 +365,7 @@ export default function Profilefix(props) {
           src={user?.image}
           {...getOverrideProps(
             overrides,
-            "Isolated closeup shot of a gray cat looking into the camera605291"
+            "Isolated closeup shot of a gray cat looking into the camera391689"
           )}
         ></Image>
         <Image
@@ -401,7 +383,7 @@ export default function Profilefix(props) {
           src={user?.image}
           {...getOverrideProps(
             overrides,
-            "Isolated closeup shot of a gray cat looking into the camera605292"
+            "Isolated closeup shot of a gray cat looking into the camera391690"
           )}
         ></Image>
         <Image
@@ -419,7 +401,7 @@ export default function Profilefix(props) {
           src={user?.image}
           {...getOverrideProps(
             overrides,
-            "Isolated closeup shot of a gray cat looking into the camera605293"
+            "Isolated closeup shot of a gray cat looking into the camera391691"
           )}
         ></Image>
         <Image
@@ -437,7 +419,7 @@ export default function Profilefix(props) {
           src={user?.image}
           {...getOverrideProps(
             overrides,
-            "Isolated closeup shot of a gray cat looking into the camera605294"
+            "Isolated closeup shot of a gray cat looking into the camera391692"
           )}
         ></Image>
         <View
@@ -466,7 +448,7 @@ export default function Profilefix(props) {
             borderRadius="50px"
             padding="0px 0px 0px 0px"
             backgroundColor="rgba(217,217,217,1)"
-            {...getOverrideProps(overrides, "Rectangle 31605296")}
+            {...getOverrideProps(overrides, "Rectangle 31391694")}
           ></View>
           <Text
             fontFamily="Roboto"
@@ -518,7 +500,7 @@ export default function Profilefix(props) {
             borderRadius="50px"
             padding="0px 0px 0px 0px"
             backgroundColor="rgba(217,217,217,1)"
-            {...getOverrideProps(overrides, "Rectangle 31605299")}
+            {...getOverrideProps(overrides, "Rectangle 31391697")}
           ></View>
           <Text
             fontFamily="Roboto"
@@ -570,7 +552,7 @@ export default function Profilefix(props) {
             borderRadius="50px"
             padding="0px 0px 0px 0px"
             backgroundColor="rgba(217,217,217,1)"
-            {...getOverrideProps(overrides, "Rectangle 31605302")}
+            {...getOverrideProps(overrides, "Rectangle 31391700")}
           ></View>
           <Text
             fontFamily="Roboto"
