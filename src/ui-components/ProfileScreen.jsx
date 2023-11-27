@@ -25,6 +25,14 @@ export default function ProfileScreen(props) {
   const ovalThreeEightZeroSixSixSixOnClick = useAuthSignOutAction({
     global: false,
   });
+  const ellipseTwoOnClick = useNavigateAction({
+    type: "url",
+    url: "/Myuploadpage",
+  });
+  const vectorFourOneFiveSevenThreeOnClick = useNavigateAction({
+    type: "url",
+    url: "/Myuploadpage",
+  });
   const vectorFourOneFiveSevenFourOnClick = async () => {
     await API.graphql({
       query: createUser.replaceAll("__typename", ""),
@@ -873,6 +881,9 @@ export default function ProfileScreen(props) {
           position="absolute"
           top="0px"
           left="0px"
+          onClick={() => {
+            ellipseTwoOnClick();
+          }}
           {...getOverrideProps(overrides, "Ellipse 2")}
         ></Icon>
         <View
@@ -959,6 +970,9 @@ export default function ProfileScreen(props) {
                   bottom="0%"
                   left="0%"
                   right="0%"
+                  onClick={() => {
+                    vectorFourOneFiveSevenThreeOnClick();
+                  }}
                   {...getOverrideProps(overrides, "Vector41573")}
                 ></Icon>
                 <Icon

@@ -22,8 +22,8 @@ export default function ProfileCollection(props) {
   const [instanceKey, setInstanceKey] = React.useState("newGuid");
   const [loading, setLoading] = React.useState(true);
   const [maxViewed, setMaxViewed] = React.useState(1);
-  const pageSize = 1;
-  const isPaginated = true;
+  const pageSize = 6;
+  const isPaginated = false;
   React.useEffect(() => {
     nextToken[instanceKey] = "";
     apiCache[instanceKey] = [];
@@ -76,8 +76,6 @@ export default function ProfileCollection(props) {
   React.useEffect(() => {
     setMaxViewed(Math.max(maxViewed, pageIndex));
   }, [pageIndex, maxViewed, setMaxViewed]);
-  document.body.style.background = 'none';
-  document.body.style.backgroundColor = "#46a5db";
   return (
     <div>
       <Collection
