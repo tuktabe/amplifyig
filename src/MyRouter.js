@@ -13,11 +13,9 @@ export default function Root() {
           <Route exact path="/" component={FeedprofileCollection} />
           <Route exact path="/collection" component={FeedprofileCollection} />
           <Route exact path="/ProfileCollection" component={ProfileCollection} />
-          <Route exact path="/ProfileScreenCollection" component={ProfileScreenCollection} />
-        
-          
+          <Route exact path="/ProfileScreenCollection" component={ProfileScreenCollection} />         
         </Switch>
-      </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+      </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
     </Router>
   );
 }
