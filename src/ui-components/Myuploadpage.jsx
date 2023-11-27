@@ -9,10 +9,12 @@ import * as React from "react";
 import { getOverrideProps } from "./utils";
 import { Icon, Image, Text, View } from "@aws-amplify/ui-react";
 import Ionlogooctocat from "./Ionlogooctocat";
-import { FileUploader } from '@aws-amplify/ui-react';
+
 export default function Myuploadpage(props) {
   const { overrides, ...rest } = props;
+
   return (
+    
     <View
       width="375px"
       height="812px"

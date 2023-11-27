@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, HashRouter, Route, Switch, Routes } from "react-router-dom";
-import { Backhurt, BackhurtCollection, FeedpageCollection, ModelcatCollection, NewfeedCollection, PostCollection, ProfileCollection, Profilefix, ProfileScreen, ProfileScreenCollection, Feedprofile, FeedprofileCollection, Myuploadpage } from "./ui-components";
+import { Backhurt, BackhurtCollection, FeedpageCollection, ModelcatCollection, NewfeedCollection, PostCollection, ProfileCollection, Profilefix, ProfileScreen, ProfileScreenCollection, Feedprofile, FeedprofileCollection, Myuploadpage, } from "./ui-components";
 
 export default function Root() {
   document.body.style.background = 'none';
@@ -14,7 +14,10 @@ export default function Root() {
           <Route exact path="/collection" component={FeedprofileCollection} />
           <Route exact path="/ProfileCollection" component={ProfileCollection} />
           <Route exact path="/ProfileScreenCollection" component={ProfileScreenCollection} />
-          <Route exact path="/Myuploadpage" component={Myuploadpage} />   
+          <Route exact path="/Myuploadpage" component={Myuploadpage} />
+       
+         
+
 
         </Switch>
       </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
