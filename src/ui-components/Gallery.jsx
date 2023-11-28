@@ -15,11 +15,41 @@ export default function Gallery(props) {
     type: "url",
     url: "/ProfileScreenCollection",
   });
-  const vectorOnClick = useNavigateAction({ type: "url", url: "/collection" });
+  const vectorOnClick = useNavigateAction({ type: "url", url: "/" });
   const rectangleThreeEightOnClick = useNavigateAction({
     target: "_blank",
     type: "url",
     url: "ProfileScreenCollection",
+  });
+  const rectangleThreeNineOnClick = useNavigateAction({
+    target: "_blank",
+    type: "url",
+    url: "",
+  });
+  const rectangleFourTwoOnClick = useNavigateAction({
+    target: "_blank",
+    type: "url",
+    url: "",
+  });
+  const rectangleFourZeroOnClick = useNavigateAction({
+    target: "_blank",
+    type: "url",
+    url: "",
+  });
+  const rectangleFourThreeOnClick = useNavigateAction({
+    target: "_blank",
+    type: "url",
+    url: "",
+  });
+  const rectangleFourOneOnClick = useNavigateAction({
+    target: "_blank",
+    type: "url",
+    url: "",
+  });
+  const rectangleFourFourOnClick = useNavigateAction({
+    target: "_blank",
+    type: "url",
+    url: "",
   });
   const tuktaOnClick = useNavigateAction({
     target: "_blank",
@@ -819,6 +849,9 @@ export default function Gallery(props) {
           padding="0px 0px 0px 0px"
           objectFit="cover"
           src={user?.image}
+          onClick={() => {
+            rectangleThreeNineOnClick();
+          }}
           {...getOverrideProps(overrides, "Rectangle 39")}
         ></Image>
         <Image
@@ -834,6 +867,9 @@ export default function Gallery(props) {
           padding="0px 0px 0px 0px"
           objectFit="cover"
           src={user?.image}
+          onClick={() => {
+            rectangleFourTwoOnClick();
+          }}
           {...getOverrideProps(overrides, "Rectangle 42")}
         ></Image>
         <Image
@@ -849,6 +885,9 @@ export default function Gallery(props) {
           padding="0px 0px 0px 0px"
           objectFit="cover"
           src={user?.image}
+          onClick={() => {
+            rectangleFourZeroOnClick();
+          }}
           {...getOverrideProps(overrides, "Rectangle 40")}
         ></Image>
         <Image
@@ -864,6 +903,9 @@ export default function Gallery(props) {
           padding="0px 0px 0px 0px"
           objectFit="cover"
           src={user?.image}
+          onClick={() => {
+            rectangleFourThreeOnClick();
+          }}
           {...getOverrideProps(overrides, "Rectangle 43")}
         ></Image>
         <Image
@@ -879,6 +921,9 @@ export default function Gallery(props) {
           padding="0px 0px 0px 0px"
           objectFit="cover"
           src={user?.image}
+          onClick={() => {
+            rectangleFourOneOnClick();
+          }}
           {...getOverrideProps(overrides, "Rectangle 41")}
         ></Image>
         <Image
@@ -894,6 +939,9 @@ export default function Gallery(props) {
           padding="0px 0px 0px 0px"
           objectFit="cover"
           src={user?.image}
+          onClick={() => {
+            rectangleFourFourOnClick();
+          }}
           {...getOverrideProps(overrides, "Rectangle 44")}
         ></Image>
       </View>

@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { Backhurt, BackhurtCollection, FeedpageCollection, ModelcatCollection, NewfeedCollection, PostCollection, ProfileCollection } from "./ui-components";
+import { DiscoverCollection, Discover16 } from "./ui-components";
 import { withAuthenticator, Button } from '@aws-amplify/ui-react';
 import { Auth } from 'aws-amplify';
 import Root from './MyRouter';

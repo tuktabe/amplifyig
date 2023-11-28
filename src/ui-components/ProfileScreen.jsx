@@ -25,7 +25,7 @@ export default function ProfileScreen(props) {
   });
   const vectorThreeEightZeroSixFiveFiveOnClick = useNavigateAction({
     type: "url",
-    url: "/collection",
+    url: "/DiscoverCollection",
   });
   const ovalThreeEightZeroSixSixSixOnClick = useAuthSignOutAction({
     global: false,
