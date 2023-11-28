@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, HashRouter, Route, Switch, Routes } from "react-router-dom";
-import { CreateUser, DiscoverCollection, Backhurt, BackhurtCollection, FeedpageCollection, ModelcatCollection, NewfeedCollection, PostCollection, ProfileCollection, Profilefix, ProfileScreen, ProfileScreenCollection, Feedprofile, FeedprofileCollection, Myuploadpage, GalleryCollection} from "./ui-components";
+import { CreateUser, DiscoverCollection, Discover16, Backhurt, BackhurtCollection, FeedpageCollection, ModelcatCollection, NewfeedCollection, PostCollection, ProfileCollection, Profilefix, ProfileScreen, ProfileScreenCollection, Feedprofile, FeedprofileCollection, Myuploadpage, GalleryCollection, Gallery} from "./ui-components";
 import mypageupload from './mypageupload';
 
 export default function Root() {
