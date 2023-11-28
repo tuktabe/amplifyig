@@ -11,7 +11,7 @@ export default function Root() {
     <Router>
       <div>
         <Switch>
-          <Route exact path="/DiscoverCollection" component={DiscoverCollection} />
+          <Route exact path="/" component={Discover16Collection} />
           <Route exact path="/GalleryCollection" component={GalleryCollection} />
           <Route exact path="/ProfileScreenCollection" component={ProfileScreenCollection} />
           <Route exact path="/Myuploadpage" component={CreateUser} />
@@ -31,3 +31,5 @@ export default function Root() {
 
 //document.body.style.background = 'none';
 //document.body.style.backgroundColor = "#46a5db";
+
+

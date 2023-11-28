@@ -20,6 +20,9 @@ export default function Discover16(props) {
     type: "url",
     url: "/GalleryCollection",
   });
+  const emojiDoubleQuotescatfaceDoubleQuotesOnClick = useNavigateAction({
+    type: "reload",
+  });
   const vectorFourFiveEightTwoTwoEightNineOnClick = useNavigateAction({
     type: "reload",
   });
@@ -887,6 +890,9 @@ export default function Discover16(props) {
         position="absolute"
         top="746px"
         left="25px"
+        onClick={() => {
+          emojiDoubleQuotescatfaceDoubleQuotesOnClick();
+        }}
         {...getOverrideProps(overrides, '\uD83E\uDD86 emoji "cat face"')}
       >
         <Icon

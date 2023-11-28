@@ -18,6 +18,11 @@ import { Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
 export default function ProfileScreen(props) {
   const { user, overrides, ...rest } = props;
   const authAttributes = useAuth().user?.attributes ?? {};
+  const profileScreenOnClick = useNavigateAction({
+    target: "_blank",
+    type: "url",
+    url: "/Myuploadpage",
+  });
   const rectangleOneOneOnClick = useNavigateAction({
     target: "_blank",
     type: "url",
@@ -25,7 +30,7 @@ export default function ProfileScreen(props) {
   });
   const vectorThreeEightZeroSixFiveFiveOnClick = useNavigateAction({
     type: "url",
-    url: "/DiscoverCollection",
+    url: "/",
   });
   const ovalThreeEightZeroSixSixSixOnClick = useAuthSignOutAction({
     global: false,
@@ -66,6 +71,9 @@ export default function ProfileScreen(props) {
       borderRadius="50px"
       padding="0px 0px 0px 0px"
       backgroundColor="rgba(255,255,255,1)"
+      onClick={() => {
+        profileScreenOnClick();
+      }}
       {...getOverrideProps(overrides, "ProfileScreen")}
       {...rest}
     >

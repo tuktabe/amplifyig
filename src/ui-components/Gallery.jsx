@@ -24,32 +24,32 @@ export default function Gallery(props) {
   const rectangleThreeNineOnClick = useNavigateAction({
     target: "_blank",
     type: "url",
-    url: "",
+    url: user?.image,
   });
   const rectangleFourTwoOnClick = useNavigateAction({
     target: "_blank",
     type: "url",
-    url: "",
+    url: user?.image,
   });
   const rectangleFourZeroOnClick = useNavigateAction({
     target: "_blank",
     type: "url",
-    url: "",
+    url: user?.image,
   });
   const rectangleFourThreeOnClick = useNavigateAction({
     target: "_blank",
     type: "url",
-    url: "",
+    url: user?.image,
   });
   const rectangleFourOneOnClick = useNavigateAction({
     target: "_blank",
     type: "url",
-    url: "",
+    url: user?.image,
   });
   const rectangleFourFourOnClick = useNavigateAction({
     target: "_blank",
     type: "url",
-    url: "",
+    url: user?.image,
   });
   const tuktaOnClick = useNavigateAction({
     target: "_blank",
