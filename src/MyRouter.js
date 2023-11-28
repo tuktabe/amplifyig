@@ -12,6 +12,7 @@ export default function Root() {
       <div>
         <Switch>
           <Route exact path="/" component={Discover16Collection} />
+          <Route exact path="/collection" component={Discover16Collection} />
           <Route exact path="/GalleryCollection" component={GalleryCollection} />
           <Route exact path="/ProfileScreenCollection" component={ProfileScreenCollection} />
           <Route exact path="/Myuploadpage" component={CreateUser} />
