@@ -6,15 +6,16 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "./utils";
+import { getOverrideProps, useNavigateAction } from "./utils";
 import { Icon, Image, Text, View } from "@aws-amplify/ui-react";
 import Ionlogooctocat from "./Ionlogooctocat";
-
 export default function Myuploadpage(props) {
   const { overrides, ...rest } = props;
-
+  const vectorFourTwoOneOneThreeSevenOneOnClick = useNavigateAction({
+    type: "url",
+    url: "/mypageupload",
+  });
   return (
-    
     <View
       width="375px"
       height="812px"
@@ -876,6 +877,9 @@ export default function Myuploadpage(props) {
           bottom="9.33%"
           left="0%"
           right="0%"
+          onClick={() => {
+            vectorFourTwoOneOneThreeSevenOneOnClick();
+          }}
           {...getOverrideProps(overrides, "Vector4211371")}
         ></Icon>
       </View>

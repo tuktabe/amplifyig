@@ -9,7 +9,6 @@ export { default as BackhurtCollection } from "./BackhurtCollection";
 export { default as Feedpage } from "./Feedpage";
 export { default as Feedprofile } from "./Feedprofile";
 export { default as FeedprofileCollection } from "./FeedprofileCollection";
-export { default as Ionlogooctocat } from "./Ionlogooctocat";
 export { default as Modelcat } from "./Modelcat";
 export { default as ModelcatCollection } from "./ModelcatCollection";
 export { default as Myuploadpage } from "./Myuploadpage";

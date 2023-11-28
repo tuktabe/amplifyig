@@ -20,6 +20,8 @@ export default function Profilefix(props) {
     type: "url",
     url: "ProfileScreenCollection",
   });
+  const isolatedcloseupshotofagraycatlookingintothecameraThreeNineOneSixEightFourOnClick =
+    useNavigateAction({ type: "url", url: "/ProfileScreenCollection" });
   return (
     <View
       width="375px"
@@ -273,6 +275,9 @@ export default function Profilefix(props) {
           padding="0px 0px 0px 0px"
           objectFit="cover"
           src={user?.image}
+          onClick={() => {
+            isolatedcloseupshotofagraycatlookingintothecameraThreeNineOneSixEightFourOnClick();
+          }}
           {...getOverrideProps(
             overrides,
             "Isolated closeup shot of a gray cat looking into the camera391684"
