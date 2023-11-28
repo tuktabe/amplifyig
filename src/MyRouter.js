@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, HashRouter, Route, Switch, Routes } from "react-router-dom";
-import { Backhurt, BackhurtCollection, FeedpageCollection, ModelcatCollection, NewfeedCollection, PostCollection, ProfileCollection, Profilefix, ProfileScreen, ProfileScreenCollection, Feedprofile, FeedprofileCollection, Myuploadpage, GalleryCollection} from "./ui-components";
+import { CreateUser, Discover16Collection, Backhurt, BackhurtCollection, FeedpageCollection, ModelcatCollection, NewfeedCollection, PostCollection, ProfileCollection, Profilefix, ProfileScreen, ProfileScreenCollection, Feedprofile, FeedprofileCollection, Myuploadpage, GalleryCollection} from "./ui-components";
 import mypageupload from './mypageupload';
 
 export default function Root() {
@@ -11,9 +11,9 @@ export default function Root() {
     <Router>
       <div>
         <Switch>
-          <Route exact path="/" component={FeedprofileCollection} />
+          <Route exact path="/" component={Discover16Collection} />
           <Route exact path="/ProfileScreenCollection" component={ProfileScreenCollection} />
-          <Route exact path="/Myuploadpage" component={Myuploadpage} />
+          <Route exact path="/Myuploadpage" component={CreateUser} />
           <Route exact path="/GalleryCollection" component={GalleryCollection} />
           <Route exact path="/mypageupload" component={mypageupload} />
          

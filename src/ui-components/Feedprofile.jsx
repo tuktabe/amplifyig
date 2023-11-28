@@ -1125,7 +1125,7 @@ export default function Feedprofile(props) {
         left="55px"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-        children="Gender: Male"
+        children=""
         {...getOverrideProps(overrides, "Gender: Male")}
       ></Text>
       <Text
