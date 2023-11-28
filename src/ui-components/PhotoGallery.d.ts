@@ -21,6 +21,9 @@ export declare type PhotoGalleryOverridesProps = {
     "214211499"?: PrimitiveOverrideProps<TextProps>;
     "214211513"?: PrimitiveOverrideProps<TextProps>;
     PhotoGallery?: PrimitiveOverrideProps<ViewProps>;
+    "ion:home"?: PrimitiveOverrideProps<ViewProps>;
+    Vector4452968?: PrimitiveOverrideProps<IconProps>;
+    Vector4452969?: PrimitiveOverrideProps<IconProps>;
     Background?: PrimitiveOverrideProps<IconProps>;
     Menu?: PrimitiveOverrideProps<ViewProps>;
     "ic:baseline-home"?: PrimitiveOverrideProps<ViewProps>;

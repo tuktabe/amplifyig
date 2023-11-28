@@ -6,6 +6,8 @@
 
 export { default as Backhurt } from "./Backhurt";
 export { default as BackhurtCollection } from "./BackhurtCollection";
+export { default as Discover16 } from "./Discover16";
+export { default as Discover16Collection } from "./Discover16Collection";
 export { default as Feedpage } from "./Feedpage";
 export { default as Feedprofile } from "./Feedprofile";
 export { default as FeedprofileCollection } from "./FeedprofileCollection";

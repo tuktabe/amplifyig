@@ -8,10 +8,12 @@
 import * as React from "react";
 import { getOverrideProps, useNavigateAction } from "./utils";
 import { Icon, Image, Text, View } from "@aws-amplify/ui-react";
-import Ionlogooctocat from "./Ionlogooctocat";
-import { FileUploader } from '@aws-amplify/ui-react';
 export default function Myuploadpage(props) {
   const { overrides, ...rest } = props;
+  const vectorFourTwoOneOneThreeSevenOneOnClick = useNavigateAction({
+    type: "url",
+    url: "/mypageupload",
+  });
   return (
     <View
       width="375px"

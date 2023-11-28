@@ -85,8 +85,8 @@ export default function UploadPhoto(props) {
           justifyContent="unset"
           overflow="hidden"
           position="absolute"
-          top="18px"
-          left="174px"
+          top="5px"
+          left="176px"
           padding="0px 0px 0px 0px"
           {...getOverrideProps(overrides, "Mess")}
         >

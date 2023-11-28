@@ -101,8 +101,8 @@ export default function Gallery(props) {
           justifyContent="unset"
           overflow="hidden"
           position="absolute"
-          top="25px"
-          left="173px"
+          top="5px"
+          left="176px"
           padding="0px 0px 0px 0px"
           {...getOverrideProps(overrides, "Mess")}
         >
@@ -182,15 +182,15 @@ export default function Gallery(props) {
           ></Icon>
         </View>
         <Image
-          width="57px"
-          height="63px"
+          width="59px"
+          height="46px"
           display="block"
           gap="unset"
           alignItems="unset"
           justifyContent="unset"
           position="absolute"
-          top="5px"
-          left="291px"
+          top="17px"
+          left="290px"
           padding="0px 0px 0px 0px"
           objectFit="cover"
           src={user?.image}

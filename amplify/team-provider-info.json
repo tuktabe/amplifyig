@@ -19,5 +19,29 @@
         "s3mycapstonestoragef4ea27cd": {}
       }
     }
+  },
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mycapstone-dev-224542-authRole",
+      "UnauthRoleArn": "arn:aws:iam::651187148162:role/amplify-mycapstone-dev-224542-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::651187148162:role/amplify-mycapstone-dev-224542-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-mycapstone-dev-224542-deployment",
+      "UnauthRoleName": "amplify-mycapstone-dev-224542-unauthRole",
+      "StackName": "amplify-mycapstone-dev-224542",
+      "StackId": "arn:aws:cloudformation:us-east-2:651187148162:stack/amplify-mycapstone-dev-224542/c1294e80-8db9-11ee-8174-0a38ae25b7ed",
+      "AmplifyAppId": "d1teae33piox0a"
+    },
+    "categories": {
+      "auth": {
+        "mycapstone": {}
+      },
+      "api": {
+        "mycapstone": {}
+      },
+      "storage": {
+        "s3mycapstonestoragef4ea27cd": {}
+      }
+    }
   }
 }
