@@ -2,7 +2,7 @@ import React from 'react';
 import { FileUploader } from '@aws-amplify/ui-react';
 import './App.css';
 
-function mypageupload() {
+function App() {
     return (
         <>
             <FileUploader
@@ -14,5 +14,4 @@ function mypageupload() {
     );
 }
 
-export default mypageupload;
-
+export default App;
