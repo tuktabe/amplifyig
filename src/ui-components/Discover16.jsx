@@ -6,10 +6,23 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { getOverrideProps } from "./utils";
+import { getOverrideProps, useNavigateAction } from "./utils";
 import { Icon, Image, Text, View } from "@aws-amplify/ui-react";
 export default function Discover16(props) {
   const { user, overrides, ...rest } = props;
+  const rectangleThreeFiveOnClick = useNavigateAction({
+    target: "_blank",
+    type: "url",
+    url: "/GalleryCollection",
+  });
+  const rectangleFourSevenOnClick = useNavigateAction({
+    target: "_blank",
+    type: "url",
+    url: "/GalleryCollection",
+  });
+  const vectorFourFiveEightTwoTwoEightNineOnClick = useNavigateAction({
+    type: "reload",
+  });
   return (
     <View
       width="375px"
@@ -178,6 +191,9 @@ export default function Discover16(props) {
           padding="0px 0px 0px 0px"
           objectFit="cover"
           src={user?.image}
+          onClick={() => {
+            rectangleThreeFiveOnClick();
+          }}
           {...getOverrideProps(overrides, "Rectangle 35")}
         ></Image>
       </View>
@@ -774,6 +790,9 @@ export default function Discover16(props) {
         padding="0px 0px 0px 0px"
         objectFit="cover"
         src={user?.image}
+        onClick={() => {
+          rectangleFourSevenOnClick();
+        }}
         {...getOverrideProps(overrides, "Rectangle 47")}
       ></Image>
       <View
@@ -810,7 +829,7 @@ export default function Discover16(props) {
         left="63px"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-        children="Roma"
+        children={user?.name}
         {...getOverrideProps(overrides, "Roma")}
       ></Text>
       <Text
@@ -832,7 +851,7 @@ export default function Discover16(props) {
         left="62px"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-        children="Gender: Male"
+        children={user?.bio}
         {...getOverrideProps(overrides, "Gender: Male")}
       ></Text>
       <Text
@@ -895,6 +914,9 @@ export default function Discover16(props) {
           bottom="0%"
           left="8.72%"
           right="6.35%"
+          onClick={() => {
+            vectorFourFiveEightTwoTwoEightNineOnClick();
+          }}
           {...getOverrideProps(overrides, "Vector4582289")}
         ></Icon>
         <Icon
