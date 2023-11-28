@@ -18,6 +18,11 @@ import { Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
 export default function ProfileScreen(props) {
   const { user, overrides, ...rest } = props;
   const authAttributes = useAuth().user?.attributes ?? {};
+  const rectangleOneOneOnClick = useNavigateAction({
+    target: "_blank",
+    type: "url",
+    url: user?.image,
+  });
   const vectorThreeEightZeroSixFiveFiveOnClick = useNavigateAction({
     type: "url",
     url: "/collection",
@@ -26,6 +31,11 @@ export default function ProfileScreen(props) {
     global: false,
   });
   const ellipseTwoOnClick = useNavigateAction({
+    type: "url",
+    url: "/Myuploadpage",
+  });
+  const cameraOnClick = useNavigateAction({
+    target: "_blank",
     type: "url",
     url: "/Myuploadpage",
   });
@@ -72,6 +82,9 @@ export default function ProfileScreen(props) {
         padding="0px 0px 0px 0px"
         objectFit="cover"
         src={user?.image}
+        onClick={() => {
+          rectangleOneOneOnClick();
+        }}
         {...getOverrideProps(overrides, "Rectangle 11")}
       ></Image>
       <Flex
@@ -898,6 +911,9 @@ export default function ProfileScreen(props) {
           top="10px"
           left="11.56px"
           padding="0px 0px 0px 0px"
+          onClick={() => {
+            cameraOnClick();
+          }}
           {...getOverrideProps(overrides, "camera")}
         >
           <View

@@ -5,7 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
-import { ViewProps } from "@aws-amplify/ui-react";
+import { IconProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -17,11 +17,10 @@ export declare type Variant = {
     overrides: EscapeHatchProps;
 };
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
-export declare type IonlogooctocatOverridesProps = {
-    Ionlogooctocat?: PrimitiveOverrideProps<ViewProps>;
-    "ion:logo-octocat"?: PrimitiveOverrideProps<ViewProps>;
+export declare type IonhomeOverridesProps = {
+    Ionhome?: PrimitiveOverrideProps<IconProps>;
 } & EscapeHatchProps;
-export declare type IonlogooctocatProps = React.PropsWithChildren<Partial<ViewProps> & {
-    overrides?: IonlogooctocatOverridesProps | undefined | null;
+export declare type IonhomeProps = React.PropsWithChildren<Partial<IconProps> & {
+    overrides?: IonhomeOverridesProps | undefined | null;
 }>;
-export default function Ionlogooctocat(props: IonlogooctocatProps): React.ReactElement;
+export default function Ionhome(props: IonhomeProps): React.ReactElement;

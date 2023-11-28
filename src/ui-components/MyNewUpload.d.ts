@@ -5,6 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
+import { UploadPhotoProps } from "./UploadPhoto";
 import { ViewProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
@@ -17,11 +18,11 @@ export declare type Variant = {
     overrides: EscapeHatchProps;
 };
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
-export declare type IonlogooctocatOverridesProps = {
-    Ionlogooctocat?: PrimitiveOverrideProps<ViewProps>;
-    "ion:logo-octocat"?: PrimitiveOverrideProps<ViewProps>;
+export declare type MyNewUploadOverridesProps = {
+    MyNewUpload?: PrimitiveOverrideProps<ViewProps>;
+    UploadPhoto?: UploadPhotoProps;
 } & EscapeHatchProps;
-export declare type IonlogooctocatProps = React.PropsWithChildren<Partial<ViewProps> & {
-    overrides?: IonlogooctocatOverridesProps | undefined | null;
+export declare type MyNewUploadProps = React.PropsWithChildren<Partial<ViewProps> & {
+    overrides?: MyNewUploadOverridesProps | undefined | null;
 }>;
-export default function Ionlogooctocat(props: IonlogooctocatProps): React.ReactElement;
+export default function MyNewUpload(props: MyNewUploadProps): React.ReactElement;

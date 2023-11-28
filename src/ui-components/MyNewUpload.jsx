@@ -7,27 +7,41 @@
 /* eslint-disable */
 import * as React from "react";
 import { getOverrideProps } from "./utils";
+import UploadPhoto from "./UploadPhoto";
 import { View } from "@aws-amplify/ui-react";
-export default function Ionlogooctocat(props) {
+export default function MyNewUpload(props) {
   const { overrides, ...rest } = props;
   return (
     <View
-      width="63px"
-      height="54px"
+      width="375px"
+      height="812px"
       display="block"
       gap="unset"
       alignItems="unset"
       justifyContent="unset"
       position="relative"
       padding="0px 0px 0px 0px"
-      {...getOverrideProps(overrides, "Ionlogooctocat")}
+      {...getOverrideProps(overrides, "MyNewUpload")}
       {...rest}
     >
-      <View
-        width="63px"
-        height="54px"
-        {...getOverrideProps(overrides, "ion:logo-octocat")}
-      ></View>
+      <UploadPhoto
+        width="375px"
+        height="812px"
+        display="block"
+        gap="unset"
+        alignItems="unset"
+        justifyContent="unset"
+        overflow="hidden"
+        position="absolute"
+        top="0%"
+        bottom="0%"
+        left="0%"
+        right="0%"
+        borderRadius="50px"
+        padding="0px 0px 0px 0px"
+        backgroundColor="rgba(255,255,255,1)"
+        {...getOverrideProps(overrides, "UploadPhoto")}
+      ></UploadPhoto>
     </View>
   );
 }

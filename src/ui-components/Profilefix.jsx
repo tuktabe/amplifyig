@@ -21,7 +21,11 @@ export default function Profilefix(props) {
     url: "ProfileScreenCollection",
   });
   const isolatedcloseupshotofagraycatlookingintothecameraThreeNineOneSixEightFourOnClick =
-    useNavigateAction({ type: "url", url: "/ProfileScreenCollection" });
+    useNavigateAction({
+      target: "_blank",
+      type: "url",
+      url: "/ProfileScreenCollection",
+    });
   return (
     <View
       width="375px"

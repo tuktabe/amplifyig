@@ -5,7 +5,8 @@
  **************************************************************************/
 
 import * as React from "react";
-import { ViewProps } from "@aws-amplify/ui-react";
+import { GalleryProps } from "./Gallery";
+import { CollectionProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -17,11 +18,17 @@ export declare type Variant = {
     overrides: EscapeHatchProps;
 };
 export declare type PrimitiveOverrideProps<T> = Partial<T> & React.DOMAttributes<HTMLDivElement>;
-export declare type IonlogooctocatOverridesProps = {
-    Ionlogooctocat?: PrimitiveOverrideProps<ViewProps>;
-    "ion:logo-octocat"?: PrimitiveOverrideProps<ViewProps>;
+export declare type GalleryCollectionOverridesProps = {
+    GalleryCollection?: PrimitiveOverrideProps<CollectionProps>;
+    Gallery?: GalleryProps;
 } & EscapeHatchProps;
-export declare type IonlogooctocatProps = React.PropsWithChildren<Partial<ViewProps> & {
-    overrides?: IonlogooctocatOverridesProps | undefined | null;
+export declare type GalleryCollectionProps = React.PropsWithChildren<Partial<CollectionProps<any>> & {
+    items?: any[];
+    overrideItems?: (collectionItem: {
+        item: any;
+        index: number;
+    }) => GalleryProps;
+} & {
+    overrides?: GalleryCollectionOverridesProps | undefined | null;
 }>;
-export default function Ionlogooctocat(props: IonlogooctocatProps): React.ReactElement;
+export default function GalleryCollection(props: GalleryCollectionProps): React.ReactElement;

@@ -8,7 +8,6 @@
 import * as React from "react";
 import { getOverrideProps, useNavigateAction } from "./utils";
 import { Icon, Image, Text, View } from "@aws-amplify/ui-react";
-import Ionlogooctocat from "./Ionlogooctocat";
 export default function Myuploadpage(props) {
   const { overrides, ...rest } = props;
   const vectorFourTwoOneOneThreeSevenOneOnClick = useNavigateAction({
@@ -170,19 +169,11 @@ export default function Myuploadpage(props) {
             {...getOverrideProps(overrides, "Oval")}
           ></Icon>
         </View>
-        <Ionlogooctocat
+        <View
           width="57px"
           height="45px"
-          display="block"
-          gap="unset"
-          alignItems="unset"
-          justifyContent="unset"
-          position="absolute"
-          top="14px"
-          left="32px"
-          padding="0px 0px 0px 0px"
-          {...getOverrideProps(overrides, "ion:logo-octocat")}
-        ></Ionlogooctocat>
+          {...getOverrideProps(overrides, "ion:logo-octocat4211472")}
+        ></View>
         <Image
           width="45px"
           height="45px"
@@ -197,6 +188,70 @@ export default function Myuploadpage(props) {
           objectFit="cover"
           {...getOverrideProps(overrides, "Rectangle 35")}
         ></Image>
+        <View
+          width="57px"
+          height="57px"
+          display="block"
+          gap="unset"
+          alignItems="unset"
+          justifyContent="unset"
+          overflow="hidden"
+          position="absolute"
+          top="8px"
+          left="32px"
+          padding="0px 0px 0px 0px"
+          {...getOverrideProps(overrides, "ion:logo-octocat4432795")}
+        >
+          <Icon
+            width="26.3px"
+            height="10.67px"
+            viewBox={{
+              minX: 0,
+              minY: 0,
+              width: 26.30126953125,
+              height: 10.674140930175781,
+            }}
+            paths={[
+              {
+                d: "M3.88869 0C2.80324 0 1.87254 0.507656 1.12108 1.54412C0.36961 2.58059 0 3.83525 0 5.32928C0 6.8233 0.381856 8.10246 1.12108 9.12779C1.86029 10.1531 2.791 10.6741 3.88869 10.6741C4.90178 10.6741 5.78127 10.1554 6.52494 9.13002C7.26861 8.10469 7.64602 6.83889 7.64602 5.33151C7.64602 3.82412 7.26416 2.56945 6.52494 1.54635C5.78572 0.523244 4.90623 0 3.88869 0ZM22.5317 0C21.4585 0 20.5155 0.507656 19.7641 1.54412C19.0126 2.58059 18.643 3.83525 18.643 5.32928C18.643 6.8233 19.0249 8.10246 19.7641 9.12779C20.5033 10.1531 21.4463 10.6741 22.5317 10.6741C23.5459 10.6741 24.4243 10.1554 25.1802 9.13002C25.9361 8.10469 26.3013 6.83889 26.3013 5.33151C26.3013 3.82412 25.9194 2.56945 25.1802 1.54635C24.441 0.523244 23.5581 0 22.5317 0Z",
+                fill: "rgba(105,155,247,1)",
+                fillRule: "nonzero",
+              },
+            ]}
+            display="block"
+            gap="unset"
+            alignItems="unset"
+            justifyContent="unset"
+            position="absolute"
+            top="56.66%"
+            bottom="24.61%"
+            left="26.94%"
+            right="26.92%"
+            {...getOverrideProps(overrides, "Vector4432796")}
+          ></Icon>
+          <Icon
+            width="53.44px"
+            height="46.31px"
+            viewBox={{ minX: 0, minY: 0, width: 53.4375, height: 46.3125 }}
+            paths={[
+              {
+                d: "M49.3584 13.0254C49.3462 13.0254 49.6802 11.3009 49.3941 8.29729C49.1313 5.29143 48.5034 2.53271 47.4737 0C47.4737 0 46.9482 0.0968554 45.9462 0.34957C44.9443 0.602285 43.3066 1.11328 41.0678 2.13527C38.8613 3.15949 36.5357 4.52215 34.1143 6.17537C32.4677 5.70445 30.0107 5.46398 26.7188 5.46398C23.5815 5.46398 21.1245 5.70445 19.3232 6.17537C14.004 2.44811 9.54676 0.389648 5.9516 0C4.92664 2.53309 4.29059 5.30701 4.04344 8.32178C3.75732 11.3276 4.09131 13.0621 4.09131 13.0621C1.19232 16.2339 0 20.805 0 24.579C0 27.498 0.0834962 30.1388 0.728086 32.4833C1.39605 34.8112 2.24215 36.7138 3.2441 38.1766C4.28075 39.6559 5.55438 40.954 7.01367 42.0186C8.50436 43.1408 9.87592 43.949 11.1172 44.4555C12.3697 44.9855 13.7891 45.3718 15.4112 45.649C16.6133 45.8816 17.8282 46.0429 19.0494 46.1321C19.0494 46.1321 22.3892 46.3125 26.731 46.3125C31.0728 46.3125 34.4004 46.1321 34.4004 46.1321C35.6215 46.0399 36.8363 45.8771 38.0386 45.6445C39.5059 45.4077 40.942 45.0074 42.3203 44.4511C43.5616 43.9323 44.9331 43.1363 46.4394 42.0141C47.8981 40.9511 49.1681 39.6509 50.1967 38.1677C51.1987 36.7082 52.0448 34.8023 52.7128 32.4744C53.3807 30.1465 53.4375 27.4858 53.4375 24.5668C53.4375 20.913 52.2452 16.2817 49.3584 13.0254ZM41.5577 41.1992C38.229 42.7789 33.3383 43.418 26.8501 43.418L26.5996 43.418C20.1103 43.418 15.2197 42.7912 11.9522 41.1992C8.68471 39.6072 7.02592 36.362 7.02592 31.4658C7.02592 28.5356 8.05125 26.1599 10.0674 24.3408C10.9502 23.5615 12.0234 23.0138 13.3594 22.6887C14.6953 22.3636 15.9121 22.3547 17.0566 22.387C18.1788 22.4348 19.753 22.6519 21.7446 22.8089C23.7363 22.9659 25.2392 23.1707 26.731 23.1707C28.1259 23.1707 29.9751 22.9291 32.9453 22.6887C35.9156 22.4482 38.1343 22.3269 39.5649 22.5673C41.0322 22.8089 42.3091 23.3155 43.3946 24.3408C45.5054 26.246 46.563 28.621 46.5674 31.4658C46.5552 36.362 44.873 39.6195 41.5577 41.1992Z",
+                fill: "rgba(105,155,247,1)",
+                fillRule: "nonzero",
+              },
+            ]}
+            display="block"
+            gap="unset"
+            alignItems="unset"
+            justifyContent="unset"
+            position="absolute"
+            top="9.38%"
+            bottom="9.38%"
+            left="3.13%"
+            right="3.13%"
+            {...getOverrideProps(overrides, "Vector4432797")}
+          ></Icon>
+        </View>
       </View>
       <View
         padding="0px 0px 0px 0px"

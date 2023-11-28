@@ -6,7 +6,6 @@
 
 import * as React from "react";
 import { IconProps, ImageProps, TextProps, ViewProps } from "@aws-amplify/ui-react";
-import { IonlogooctocatProps } from "./Ionlogooctocat";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
 } | null;
@@ -31,8 +30,11 @@ export declare type MyuploadpageOverridesProps = {
     Path4211273?: PrimitiveOverrideProps<IconProps>;
     Path4211274?: PrimitiveOverrideProps<IconProps>;
     Oval?: PrimitiveOverrideProps<IconProps>;
-    "ion:logo-octocat"?: IonlogooctocatProps;
+    "ion:logo-octocat4211472"?: PrimitiveOverrideProps<ViewProps>;
     "Rectangle 35"?: PrimitiveOverrideProps<ImageProps>;
+    "ion:logo-octocat4432795"?: PrimitiveOverrideProps<ViewProps>;
+    Vector4432796?: PrimitiveOverrideProps<IconProps>;
+    Vector4432797?: PrimitiveOverrideProps<IconProps>;
     "Card 2"?: PrimitiveOverrideProps<ViewProps>;
     "Group 14211297"?: PrimitiveOverrideProps<ViewProps>;
     "Rectangle 2"?: PrimitiveOverrideProps<ImageProps>;
