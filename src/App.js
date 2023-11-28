@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import { Discover16Collection, Discover16 } from "./ui-components";
+//import { Discover16Collection, Discover16 } from "./ui-components";
 import { withAuthenticator, Button } from '@aws-amplify/ui-react';
-import { Auth } from 'aws-amplify';
+//import { Auth } from 'aws-amplify';
 import Root from './MyRouter';
 
 //function App({ signOut }) {

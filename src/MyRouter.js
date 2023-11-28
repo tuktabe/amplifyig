@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, HashRouter, Route, Switch, Routes } from "react-router-dom";
-import { CreateUser, Discover16, Discover16Collection, ProfileCollection, Profilefix, ProfileScreen, ProfileScreenCollection, Feedprofile, FeedprofileCollection, Myuploadpage, GalleryCollection, Gallery} from "./ui-components";
+import { CreateUser, Discover16Collection, ProfileScreenCollection, GalleryCollection } from "./ui-components";
 import mypageupload from './mypageupload';
 
 export default function Root() {
@@ -16,20 +16,11 @@ export default function Root() {
           <Route exact path="/ProfileScreenCollection" component={ProfileScreenCollection} />
           <Route exact path="/Myuploadpage" component={CreateUser} />
           <Route exact path="/mypageupload" component={mypageupload} />
-         
-
-
         </Switch>
-      </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+      </div>                                                                                                                                                                                
     </Router>
   );
 }
 
-
-//document.body.style.background = 'none';
-//document.body.style.backgroundColor = "beige";
-
-//document.body.style.background = 'none';
-//document.body.style.backgroundColor = "#46a5db";
 
 
