@@ -8,7 +8,7 @@ export default function Root() {
   document.body.style.backgroundColor = "beige";
   
   return (
-    <Router>
+    <HashRouter>
       <div>
         <Switch>
           <Route exact path="/" component={Discover16Collection} />
@@ -20,7 +20,7 @@ export default function Root() {
           <Route exact path="/mypageupload" component={mypageupload} />
         </Switch>
       </div>                                                                                                                                                                                
-    </Router>
+    </HashRouter>
   );
 }
 
