@@ -6,7 +6,7 @@ import mypageupload from './mypageupload';
 export default function Root() {
   document.body.style.background = 'none';
   document.body.style.backgroundColor = "beige";
-
+  console.log('Router: got here!');
   return (
     <Router>
       <div>
