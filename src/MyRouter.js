@@ -14,6 +14,7 @@ export default function Root() {
           <Route exact path="/" component={Discover16Collection} />
           <Route exact path="/Discover16Collection" component={Discover16Collection} />
           <Route exact path="/GalleryCollection" component={GalleryCollection} />
+          <Route exact path="/GalleryCollection/" component={GalleryCollection} />
           <Route exact path="/ProfileScreenCollection" component={ProfileScreenCollection} />
           <Route exact path="/Myuploadpage" component={CreateUser} />
           <Route exact path="/mypageupload" component={mypageupload} />
