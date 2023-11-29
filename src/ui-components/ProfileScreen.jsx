@@ -6,18 +6,14 @@
 
 /* eslint-disable */
 import * as React from "react";
-import { useAuth } from "@aws-amplify/ui-react/internal";
 import {
   getOverrideProps,
   useAuthSignOutAction,
   useNavigateAction,
 } from "./utils";
-import { API } from "aws-amplify";
-import { createUser } from "../graphql/mutations";
 import { Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
 export default function ProfileScreen(props) {
   const { user, overrides, ...rest } = props;
-  const authAttributes = useAuth().user?.attributes ?? {};
   const profileScreenOnClick = useNavigateAction({
     target: "_blank",
     type: "url",
@@ -46,18 +42,13 @@ export default function ProfileScreen(props) {
   });
   const vectorFourOneFiveSevenThreeOnClick = useNavigateAction({
     type: "url",
-    url: "/Myuploadpage",
+    url: "#/Myuploadpage/",
   });
-  const vectorFourOneFiveSevenFourOnClick = async () => {
-    await API.graphql({
-      query: createUser.replaceAll("__typename", ""),
-      variables: {
-        input: {
-          name: authAttributes["given_name"],
-        },
-      },
-    });
-  };
+  const vectorFourOneFiveSevenFourOnClick = useNavigateAction({
+    target: "_blank",
+    type: "url",
+    url: "#/Myuploadpage/",
+  });
   return (
     <View
       width="375px"
