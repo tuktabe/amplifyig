@@ -11,12 +11,10 @@ import { Icon, Image, Text, View } from "@aws-amplify/ui-react";
 export default function Discover16(props) {
   const { user, overrides, ...rest } = props;
   const rectangleThreeFiveOnClick = useNavigateAction({
-    target: "_blank",
     type: "url",
     url: "#/GalleryCollection/",
   });
   const rectangleFourSevenOnClick = useNavigateAction({
-    target: "_blank",
     type: "url",
     url: "#/GalleryCollection/",
   });

@@ -22,8 +22,8 @@ export default function GalleryCollection(props) {
   const [instanceKey, setInstanceKey] = React.useState("newGuid");
   const [loading, setLoading] = React.useState(true);
   const [maxViewed, setMaxViewed] = React.useState(1);
-  const pageSize = 6;
-  const isPaginated = false;
+  const pageSize = 1;
+  const isPaginated = true;
   React.useEffect(() => {
     nextToken[instanceKey] = "";
     apiCache[instanceKey] = [];

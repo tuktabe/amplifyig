@@ -11,13 +11,11 @@ import { Icon, Image, Text, View } from "@aws-amplify/ui-react";
 export default function Gallery(props) {
   const { user, overrides, ...rest } = props;
   const rectangleThreeFiveOnClick = useNavigateAction({
-    target: "_blank",
     type: "url",
     url: "#/ProfileScreenCollection/",
   });
   const vectorOnClick = useNavigateAction({ type: "url", url: "/" });
   const rectangleThreeEightOnClick = useNavigateAction({
-    target: "_blank",
     type: "url",
     url: "#/ProfileScreenCollection/",
   });
