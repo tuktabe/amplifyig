@@ -11,6 +11,7 @@ export const onCreateMatch = /* GraphQL */ `
         image
         gender
         lookingFor
+        bio
         createdAt
         updatedAt
         __typename
@@ -21,6 +22,7 @@ export const onCreateMatch = /* GraphQL */ `
         image
         gender
         lookingFor
+        bio
         createdAt
         updatedAt
         __typename
@@ -45,6 +47,7 @@ export const onUpdateMatch = /* GraphQL */ `
         image
         gender
         lookingFor
+        bio
         createdAt
         updatedAt
         __typename
@@ -55,6 +58,7 @@ export const onUpdateMatch = /* GraphQL */ `
         image
         gender
         lookingFor
+        bio
         createdAt
         updatedAt
         __typename
@@ -79,6 +83,7 @@ export const onDeleteMatch = /* GraphQL */ `
         image
         gender
         lookingFor
+        bio
         createdAt
         updatedAt
         __typename
@@ -89,6 +94,7 @@ export const onDeleteMatch = /* GraphQL */ `
         image
         gender
         lookingFor
+        bio
         createdAt
         updatedAt
         __typename
@@ -111,6 +117,7 @@ export const onCreateUser = /* GraphQL */ `
       image
       gender
       lookingFor
+      bio
       createdAt
       updatedAt
       __typename
@@ -125,6 +132,7 @@ export const onUpdateUser = /* GraphQL */ `
       image
       gender
       lookingFor
+      bio
       createdAt
       updatedAt
       __typename
@@ -139,6 +147,7 @@ export const onDeleteUser = /* GraphQL */ `
       image
       gender
       lookingFor
+      bio
       createdAt
       updatedAt
       __typename

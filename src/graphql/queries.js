@@ -11,6 +11,7 @@ export const getMatch = /* GraphQL */ `
         image
         gender
         lookingFor
+        bio
         createdAt
         updatedAt
         __typename
@@ -21,6 +22,7 @@ export const getMatch = /* GraphQL */ `
         image
         gender
         lookingFor
+        bio
         createdAt
         updatedAt
         __typename
@@ -65,6 +67,7 @@ export const getUser = /* GraphQL */ `
       image
       gender
       lookingFor
+      bio
       createdAt
       updatedAt
       __typename
@@ -84,6 +87,7 @@ export const listUsers = /* GraphQL */ `
         image
         gender
         lookingFor
+        bio
         createdAt
         updatedAt
         __typename
