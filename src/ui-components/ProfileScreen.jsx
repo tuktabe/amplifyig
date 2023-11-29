@@ -32,15 +32,17 @@ export default function ProfileScreen(props) {
     global: false,
   });
   const ellipseTwoOnClick = useNavigateAction({
+    target: "_blank",
     type: "url",
     url: "#/Myuploadpage/",
   });
   const cameraOnClick = useNavigateAction({
     target: "_blank",
     type: "url",
-    url: "/Myuploadpage",
+    url: "#/Myuploadpage/",
   });
   const vectorFourOneFiveSevenThreeOnClick = useNavigateAction({
+    target: "_blank",
     type: "url",
     url: "#/Myuploadpage/",
   });
