@@ -15,7 +15,6 @@ import { Flex, Icon, Image, Text, View } from "@aws-amplify/ui-react";
 export default function ProfileScreen(props) {
   const { user, overrides, ...rest } = props;
   const profileScreenOnClick = useNavigateAction({
-    target: "_blank",
     type: "url",
     url: "#/Myuploadpage/",
   });
