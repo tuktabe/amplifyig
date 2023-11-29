@@ -13,13 +13,13 @@ export default function Gallery(props) {
   const rectangleThreeFiveOnClick = useNavigateAction({
     target: "_blank",
     type: "url",
-    url: "/ProfileScreenCollection",
+    url: "#/ProfileScreenCollection/",
   });
   const vectorOnClick = useNavigateAction({ type: "url", url: "/" });
   const rectangleThreeEightOnClick = useNavigateAction({
     target: "_blank",
     type: "url",
-    url: "ProfileScreenCollection",
+    url: "#/ProfileScreenCollection/",
   });
   const rectangleThreeNineOnClick = useNavigateAction({
     target: "_blank",

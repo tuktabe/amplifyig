@@ -16,7 +16,7 @@ export default function Root() {
           <Route path="/GalleryCollection" component={GalleryCollection} />
           <Route path="/GalleryCollection/" component={GalleryCollection} /> 
           <Route exact path="/ProfileScreenCollection" component={ProfileScreenCollection} />
-          <Route exact path="/Myuploadpage" component={CreateUser} />
+          <Route path="/Myuploadpage/" component={CreateUser} />
           <Route exact path="/mypageupload" component={mypageupload} />
         </Switch>
       </div>                                                                                                                                                                                

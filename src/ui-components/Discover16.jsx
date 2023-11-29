@@ -13,12 +13,12 @@ export default function Discover16(props) {
   const rectangleThreeFiveOnClick = useNavigateAction({
     target: "_blank",
     type: "url",
-    url: "/GalleryCollection",
+    url: "#/GalleryCollection/",
   });
   const rectangleFourSevenOnClick = useNavigateAction({
     target: "_blank",
     type: "url",
-    url: "/GalleryCollection/",
+    url: "#/GalleryCollection/",
   });
   const emojiDoubleQuotescatfaceDoubleQuotesOnClick = useNavigateAction({
     type: "reload",

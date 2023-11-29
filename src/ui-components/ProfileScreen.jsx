@@ -21,7 +21,7 @@ export default function ProfileScreen(props) {
   const profileScreenOnClick = useNavigateAction({
     target: "_blank",
     type: "url",
-    url: "/Myuploadpage",
+    url: "#/Myuploadpage/",
   });
   const rectangleOneOneOnClick = useNavigateAction({
     target: "_blank",
@@ -37,7 +37,7 @@ export default function ProfileScreen(props) {
   });
   const ellipseTwoOnClick = useNavigateAction({
     type: "url",
-    url: "/Myuploadpage",
+    url: "#/Myuploadpage/",
   });
   const cameraOnClick = useNavigateAction({
     target: "_blank",
